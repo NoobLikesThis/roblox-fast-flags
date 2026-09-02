@@ -26,7 +26,7 @@
 ### speed
 ```json
 {
-  "DFIntSimTimestepMultiplierDebounceCount": "1",
+  "DFIntSimTimestepMultiplierDebounceCount": "10",
   "FFlagDebugHumanoidNewPhysicsEnabled": "True",
   "DFFlagDebugSimAdaptiveEnable60HzHumanoids": "True",
   "DFFlagSimAdaptiveEnable60HzParts": "True"
