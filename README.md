@@ -501,6 +501,13 @@ FFlagNewCameraControlsBetaFeature
 }
 ```
 ## untest_shader
+### shiny boii
+```json
+{
+    "DFIntRenderClampRoughnessMax": "-1000000000",
+    "DFIntDebugFRMQualityLevelOverride": "6"
+}
+```
 ### semi fullbright
 ``` json
 {
