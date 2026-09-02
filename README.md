@@ -1,21 +1,6 @@
 # roblox-fflags
-### [fflag tracker](https://raw.githubusercontent.com/MaximumADHD/Roblox-Client-Tracker/roblox/FVariables.txt)
-## LINKS
-### [FLEASION 1 (TOP TIER #1)](https://fleasion.github.io/)
-### [FLEASION 2 (TOP TIER #1) (alternative)](https://github.com/fleasion/Fleasion/releases)
-### ------------------------
-### [fishstrap 1](https://fishstrap.app/)
-### [fishstrap 2 (alternative)](https://github.com/returnrqt/bloxstrap/)
-### [bloxstrap 1](https://bloxstraplabs.com/)
-### [bloxstrap 2 (alternative)](https://github.com/bloxstraplabs/bloxstrap)
-### [froststrap 1](https://github.com/Froststrap/Froststrap)
-### [froststrap 2 (alternative)](https://froststrap.github.io/)
 ## GOTO
-[Physics](#physics)
-
-[Untested](#untested)
-
-[the idk section](#random)
+[Physics](#physics) [Untested](#untested) [the idk section](#random) [untest_shader](#untest_shader) [visuals](#visuals)
 ## physics
 ### inf jump
 ###### POPULAR
@@ -673,7 +658,7 @@ FFlagNewCameraControlsBetaFeature
     "FFlagDisablePostFx": "True"
 }
 ```
-## Visuals ig
+## visuals
 ### white everything
 ###### by [new guy](https://github.com/Storm99999)
 ``` json
@@ -2149,3 +2134,15 @@ High
   "FIntCameraFarZPlane": "500"
 }
 ```
+## links
+### [fflag tracker](https://raw.githubusercontent.com/MaximumADHD/Roblox-Client-Tracker/roblox/FVariables.txt)
+## bootstrappers
+### [FLEASION 1 (TOP TIER #1)](https://fleasion.github.io/)
+### [FLEASION 2 (TOP TIER #1) (alternative)](https://github.com/fleasion/Fleasion/releases)
+### ------------------------
+### [fishstrap 1](https://fishstrap.app/)
+### [fishstrap 2 (alternative)](https://github.com/returnrqt/bloxstrap/)
+### [bloxstrap 1](https://bloxstraplabs.com/)
+### [bloxstrap 2 (alternative)](https://github.com/bloxstraplabs/bloxstrap)
+### [froststrap 1](https://github.com/Froststrap/Froststrap)
+### [froststrap 2 (alternative)](https://froststrap.github.io/)
