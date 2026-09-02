@@ -23,6 +23,18 @@
   "FFlagSeparateBufferZoneFromContactBuffer": "false"
 }
 ```
+### 360fps hj
+```json
+{
+  "DFFlagDebugSimAdaptiveEnable60HzHumanoids": "True",
+  "DFFlagSimAdaptiveEnable60HzParts": "True",
+  "DFIntExtraFloorRaycastDistanceHipHeightPercent": "10000000",
+  "DFIntMaxAltitudePDHipHeightPercent": "-5000",
+  "DFIntSimAdaptiveHumanoidPDControllerSubstepMultiplier": "-999999",
+  "DFIntSimTimestepMultiplierDebounceCount": "1",
+  "FFlagDebugHumanoidNewPhysicsEnabled": "True"
+}
+```
 ### speed
 ```json
 {
