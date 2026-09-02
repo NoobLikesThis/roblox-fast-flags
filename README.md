@@ -602,6 +602,14 @@ FFlagNewCameraControlsBetaFeature
 }
 ```
 ## untest_shader
+### no shaders?
+```json
+{
+    "FFlagDebugGraphicsPreferOpenGL": "true",
+    "FFlagGraphicsGLEnableSuperHQShadersExclusion": "false",
+    "FFlagGraphicsGLEnableHQShadersExclusion": "false"
+}
+```
 ### shiny boii
 ```json
 {
