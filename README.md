@@ -17,6 +17,37 @@
 
 [the idk section](#random)
 ## physics
+### inf jump
+###### POPULAR
+```json
+{
+  "DFIntExtraFloorRaycastDistanceHipHeightPercent": "2147483647"
+}
+```
+### Omega Jump
+```json
+{
+"FFlagDebugHumanoidNewPhysicsEnabled": "true",
+"DebugSimLevitationNormalPD2": "true",
+"DebugSimLevitationNormalPD100xPeriod": "4"
+}
+```
+### mesh noclip
+```json
+{
+  "DFFlagSimInvalidateContactsEveryFixedStep": "true",
+  "FFlagSeparateBufferZoneFromContactBuffer": "false"
+}
+```
+### speed
+```json
+{
+  "DFIntSimTimestepMultiplierDebounceCount": "1",
+  "FFlagDebugHumanoidNewPhysicsEnabled": "True",
+  "DFFlagDebugSimAdaptiveEnable60HzHumanoids": "True",
+  "DFFlagSimAdaptiveEnable60HzParts": "True"
+}
+```
 ### freeze clientsided
 ###### ctrl +f7
 ``` json
@@ -563,6 +594,13 @@ FFlagNewCameraControlsBetaFeature
     "FFlagMovePrerenderV2": "true"
 }
 ```
+### variable reloading
+###### used in fleasion and diversion to update fflags every second.
+```json
+{
+	"DFIntSecondsBetweenDynamicVariableReloading": "1"
+}
+```
 ## untest_shader
 ### shiny boii
 ```json
@@ -719,6 +757,30 @@ High
 "FFlagDebugDisplayUnthemedInstances": "True"
 }
 ```
+### No mesh textures
+```json
+{
+	"RenderTextureLoadingMaxCount": "0",
+	"DebugRenderMeshManagerMaxUtility": "0",
+	"RenderTextureMaxUtility": "0",
+	"DebugRenderMeshManagerAdditionalDetailUtility": "0"
+}
+```
+### Xray
+```json
+{
+  "FFlagDebugRenderMeshPauseContentRequests": "True",
+  "DFFlagUseVisBugChecks": "False"
+}
+```
+### ESP
+```json
+{
+    "DFFlagDebugDrawEnable": "True",
+    "FFlagVoiceMetricsDataEnabled3": "True",
+    "FFlagVoiceMetricsDebugDrawEnabled4": "True"
+}
+```
 ### Enable GPULightCulling
 ###### use with lighting attenuation for better vision
 ``` json
@@ -798,6 +860,7 @@ High
     "FStringDebugShowFlagState": "DFIntTaskSchedulerTargetFps, ChannelName"
 }
 ```
+
 ### Show Outlined Chunks
 ```json
 {
