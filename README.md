@@ -257,63 +257,14 @@ Fast Flags:
 ### faster preloading
 ``` json
 {
-    "DFIntNumAssetsMaxToPreload": "9999999",
     "DFIntAssetPreloading": "9999999"
 }
 ```
-### Limits light updates
-```json
-{
-    "FIntRenderLocalLightUpdatesMax": "8",
-    "FIntRenderLocalLightUpdatesMin": "6"
-}
-```
-### Disables fade in and fade out animation every light update
-```json
-{
-    "FIntRenderLocalLightFadeInMs": "0"
-}
-```
-### Disable In-game Advertisements
-```json
-{
-    "FFlagAdServiceEnabled": "False"
-}
-```
-### Disable Telemetry 
-```json
-{
-    "FFlagDebugDisableTelemetryEphemeralCounter": "True",
-    "FFlagDebugDisableTelemetryEphemeralStat": "True",
-    "FFlagDebugDisableTelemetryEventIngest": "True",
-    "FFlagDebugDisableTelemetryPoint": "True",
-    "FFlagDebugDisableTelemetryV2Counter": "True",
-    "FFlagDebugDisableTelemetryV2Event": "True",
-    "FFlagDebugDisableTelemetryV2Stat": "True",
-    "FStringTencentAuthPath": "null"
-}
-```
-### Surf the web inside of Roblox
-###### Click the Beta badge or the 13+ badge to open the webview browser.
-```json
-{
-    "FFlagTopBarUseNewBadge": "True",
-    "FStringTopBarBadgeLearnMoreLink": "https://google.com/",
-    "FStringVoiceBetaBadgeLearnMoreLink": "https://google.com/"
-}
-```
 ### MTU 
+###### 1472 good
 ```json
 {
     "DFIntConnectionMTUSize": "MTU_HERE"
-}
-```
-### Disable Shadows
-###### @Uvoltan 
-```json
-{
-    "DFIntCullFactorPixelThresholdShadowMapHighQuality": "2147483647",
-    "DFIntCullFactorPixelThresholdShadowMapLowQuality": "2147483647"
 }
 ```
 ### Preserve rendering quality with display setting
@@ -328,62 +279,6 @@ Fast Flags:
     "FFlagUserHideCharacterParticlesInFirstPerson": "True"
 }
 ```
-### Maximum Threads
-```json
-{
-    "FIntRuntimeMaxNumOfThreads": "2400"
-}
-```
-### Direct3D 11
-```ex
-{
-  // [ Better D3D11 ]
-"FIntRenderDx11LowEndCoreCount": "Set the value to ur CPU cores",
-"FIntGraphicsTextureReductionD3D11": 2147483647,
-"FFlagRenderEnableGlobalInstancingD3D11": true,
-"FFlagDisableHQShadersLowEndDx112": true,
-"FFlagDebugGraphicsPreferD3D11": true
-}
-```
-### Metal
-```ex
-{
-  // [ Better Metal ]
-"FFlagDebugGraphicsPreferMetal": true,
-"FFlagDebugGraphicsDisableDirect3D11": true,
-"FFlagGraphicsMetalShaderCookie": true,
-"FFlagGraphicsMetalShaderCookie16": true,
-"DFFlagCookieStoreEnabledMac": true,
-"FFlagGraphicsMetalTryCatch": true,
-"FFlagCookieStoreMacStickyEnabled": true,
-"FFlagDebugGraphicsDisableVulkan": true,
-"FFlagEnableMacOSHardwareDecode2": true,
-"DFStringCrashUploadToBacktraceMacPlayerToken": "null",
-"FFlagRenderEnableGlobalInstancingMetal": true
-}
-```
-### Vulkan
-```ex
-{
-  // [ Better Vulkan ]
-    "FIntGraphicsVulkanAnalyticsHundredthPercent": 0,
-    "FFlagVulkanAlwaysLogLayersAndExtensions": false,
-    "FFlagDebugGraphicsDisableDirect3D11": true,
-    "FFlagDebugGraphicsPreferVulkan": true,
-    "FFlagGraphicsVulkanBonusMemory": true,
-    "FFlagSupportHeadlessDeviceVulkan": true,
-    "FFlagRenderEnableGlobalInstancingVulkan": true,
-    "FFlagRenderEnableGlobalInstancingD3D11": false,
-    "FIntGraphicsVulkanARMVaryingBufferMb": 1024,
-    "FStringGraphicsVulkanVaryingBufferLimitMiB": "0x13B5:.+:.+=1024;0x5143:.+:.+=1024",
-}
-```
-### Minimum Threads
-```json
-{
-    "FIntTaskSchedulerThreadMin": "3"
-}
-```
 ### Smoother Terrain
 ```json
 {
@@ -394,26 +289,6 @@ Fast Flags:
 ```json
 {
     "FIntRomarkStartWithGraphicQualityLevel": "1"
-}
-```
-### Disable Player Shadows
-```json
-{
-    "FIntRenderShadowIntensity": "0"
-}
-```
-### Frame Buffer
-###### Explnation: 0 makes white screen 1-3 makes other players have laggy movement, 4 is stable has better performance than 10 and less input lag
-```json
-{
-    "DFIntMaxFrameBufferSize": "4"
-}
-```
-### 5 decimal digits limit for camera sensitivity
-###### basically like idk 8 months ago roblox added a 3 decimal digits limit, some people that I know used those extra digits
-```json
-{
-    "FFlagFixSensitivityTextPrecision": "False"
 }
 ```
 ### Disable voicechat
@@ -433,12 +308,6 @@ Fast Flags:
     "DFIntAnimationLodFacsVisibilityDenominator": "0"
 }
 ```
-### Automatically unmutes your mic on join (VC)
-```json
-{
-    "FFlagDebugDefaultChannelStartMuted": "False"
-}
-```
 ### opt-out Experience Language
 ###### Removes the Experience Language option in settings
 ```json
@@ -446,53 +315,10 @@ Fast Flags:
     "FIntV1MenuLanguageSelectionFeaturePerMillageRollout": "0"
 }
 ```
-### Lets you change the zoom out limit
-###### Only applies to games that haven't changed the default zoom limit
-```json
-{
-    "FIntCameraMaxZoomDistance": "9999"
-}
-```
 ### Exclusive Fullscreen
 ```json
 {
     "FFlagHandleAltEnterFullscreenManually": "False"
-}
-```
-### Remove layered clothing related for searching in lua app catalog
-###### From: https://discord.gg/nKjV3mGq6R
-```json
-{
-    "FStringAXCategories": "ClassicShirts.ClassicTShirts.ClassicPants"
-}
-```
-
-### bypass group id gui hiding (idk)
-``` json
-{
-    "FFlagUserShowGuiHideToggles": "True",
-    "GuiHidingApiSupport2": "True"
-}
-```
-### verified badge on u 
-###### client sided
-``` json
-{
-    "FStringWhitelistVerifiedUserId": "UserID"
-}
-```
-### verifed  badge on everyone
-###### client sided aswell
-``` json
-{
-    "FFlagOverridePlayerVerifiedBadge": "True"
-}
-```
-
-### Disable Touch Events
-```json
-{
-    "DFIntTouchSenderMaxBandwidthBps": "-1"
 }
 ```
 ### quick game launch
@@ -502,26 +328,10 @@ Fast Flags:
     "FFlagEnableQuickGameLaunch": "True"
 }
 ```
-### New notifications
-
-
-###### No more ancient 2015 ui
-``` json
-{
-    "FFlagEnableClientToastNotificationsRedirectExperiment": "True",
-    "FFlagClientToastNotificationsRedirect4": "True"
-}
-```
 ### remove fullscreen title bar
 ``` json
 {
     "FIntFullscreenTitleBarTriggerDelayMillis": "3600000"
-}
-```
-### remove translated supported message on join
-``` json
-{
-    "FFlagChatTranslationEnableSystemMessage": false
 }
 ```
 ### force MSAA
@@ -532,6 +342,14 @@ Fast Flags:
 }
 ```
 ### new camera mode
+FFlagNewCameraControls
+FFlagNewCameraControls_AltDisableZoom
+FFlagNewCameraControls_DisableMMBFocus
+FFlagNewCameraControls_IncrementalZoom
+FFlagNewCameraControls_PlanarPan
+FFlagNewCameraControls_SeparateRotateShift
+FFlagNewCameraControls_SmoothingSetting
+FFlagNewCameraControlsBetaFeature
 ``` json
 {
     "FFlagNewCameraControls": "True"
@@ -557,188 +375,14 @@ Fast Flags:
     "DFFlagDebugDisableTimeoutDisconnect": "True"
 }
 ```
-### N/A
-###### causes memory leaks
-``` json
-    {
-        "FIntPhysicsGridHierarchyLowestLevelInitBinCount": "199999999",
-        "FIntPhysicsGridHierarchyLowestLevelInitBinCountWorldModel": "100000000",
-        "FIntPhysicsSolverCollisionPoolBucketSize": "2147483647",
-        "FIntPhysicsSolverCollisionPoolBucketSizeWorldModel": "2147483647"
-    }
-```
-### Chrome UI First Time User Experience
-``` json
-{
-    "FFlagEnableChromeFTUX": "True"
-}
-```
-### Hide playerlist close button on Chrome UI
-``` json
-{
-    "FFlagDisablePlayerListDisplayCloseBtn": "True"
-}
-```
-### Pin Chat on Chrome UI
-``` json
-{
-    "FFlagEnableChromePinnedChat": "True"
-}
-```
 ### Chrome UI TopBar
 ``` json
 {
-    "FFlagEnableReportAbuseMenuRoactABTest2": "True",
-    "FFlagEnableInGameMenuChromeABTest2": "True",
-    "FFlagEnableInGameMenuChromeABTest3": "True"
-}
-```
-### do not disturb
-``` json
-{
-    "FFlagToastNotificationsProtocolEnabled2": "False"
-}
-```
-### Chrome UI Topbar Removal
-``` json
-{
-  "FFlagEnableInGameMenuChromeABTest2": "False",
-  "FFlagChromeBackwardsSignalAPI": "False",
-  "FFlagInGameMenuChrome": "False",
-  "FFlagEnableInGameMenuChrome": "False",
-  "FFlagEnableInGameMenuChromeABTest3": "False",
-  "FFlagEnableReportAbuseMenuRoact2": "False",
-  "FFlagEnableReportAbuseMenuRoactABTest": "False",
-  "FFlagEnableInGameMenuChromeABTest4": "False",
-  "FFlagChromeBetaFeature": "False",
-  "FFlagEnableInGameMenuControls": "False",
-  "FFlagEnableInGameMenuModernization": "False",
-  "FFlagEnableMenuControlsABTest": "False",
-  "FFlagEnableMenuModernizationABTest": "False",
-  "FFlagEnableMenuModernizationABTest2": "False",
-  "FFlagEnableV3MenuABTest3": "False",
-  "FFlagFixReportButtonCutOff": "False",
-  "FIntNewInGameMenuPercentRollout3": "0"
-}
-```
-### disable burger icon
-###### removes the 2015 3 lines icon from chrome ui and reverts it to the 9 dots square
-```json
-{
-    "FFlagEnableHamburgerIcon": "True"
-    "FFlagEnableHamburgerIcon": "False"
-}
-```
-### Stop the Chinese from spying on you
-``` json
-{
-    "FStringTencentAuthPath": "null"
-}
-```
-### roblox shaders
-##### false = old true  = new
-``` json
-{
-    "FFlagShaderLightingRefactor": "true"
-}
-```
-### better ping??
-``` json
-{
-    "DFIntTrackCountryRegionAPIHundredthsPercent": "10000"
-}
-```
-### better vulkan
-``` json
-{
-    "FFlagDebugGraphicsDisableVulkan": "False",
-    "FFlagDebugGraphicsDisableVulkan11": "False",
-    "FFlagDebugVulkanDisablePreRotate": "False",
-    "FFlagGraphicsVulkanBonusMemory": "True",
-    "FFlagRenderEnableGlobalInstancingVulkan": "True"
-}
-```
-### Multi Try On
-###### Allows you to try on multiple things in the catalog and buy everything at once
-###### some accessories in the same category cannot be tried on at the same time
-```json
-{
-   "FFlagAXEnableMultiTryOnUI": "True"
-}
-```
-### No opacity to Chrome UI
-##### So when this fflag is set to false when you change the background transparency in the esc menu it won't affect the small 3 buttons of chrome ui and will keep them semi-transparent
-##### the bg transparency set to opaque and the fflag is true and one on the right is bg transparency set to opaque and the fflag is false
-##### found by satlybpro (708463225578192968) in Bloxstrap stuff
-``` json
-{
-    "FFlagChromeUsePreferredTransparency": "False"
-}
-```
-### Extra + left healthbar for chrome ui Topbar
-``` json
-{
-    "FFlagEnableUnibarMaxDefaultOpen": "True",
-    "FFlagUpdateHealthBar": "False",
-    "FFlagUseNewPinIcon": "False"
-}
-```
-#### Revert the new chrome ui to the old one
-``` json
-{
-    "FFlagEnableHamburgerIcon": "False",
-    "FFlagEnableUnibarV4IA": "False",
-    "FFlagEnableAlwaysOpenUnibar2": "False",
-    "FFlagUseNewUnibarIcon": "False",
-    "FFlagUseSelfieViewFlatIcon": "False",
-    "FFlagUnibarRespawn": "False",
-    "FFlagEnableChromePinIntegrations2": "False"
-}
-```
-### cleaner desktop home page
-##### Tho it wont remove the Recommended for you and Sponsored sections but it will remove the Recommended section (the insanely long one)
-``` json
-{
-    "FIntGameGridFlexFeedItemTileNumPerFeed": "0"
-}
-```
-### Preferred text size scale
-##### enables a font scaler in the escape menu
-##### found by Sky (364112742153584640) in Bloxstrap stuff
-``` json
-{
-     "FFlagEnablePreferredTextSizeScale": "True",
-     "FFlagEnablePreferredTextSizeSettingInMenus2": "True"
-}
-```
-### Enable Better Haptics
-``` json
-{
-    "FFlagEnableBetterHapticsResultHandling": "True"
-}
-```
-### Better Trackpad Scrolling
-``` json
-{
-    "FFlagBetterTrackpadScrolling": "True"
-}
-```
-
-### Thick healthbar
-###### Disabling it will completly remove the healthbar
-``` json
-{
-    "FFlagUpdateHealthBar": "True"
-}
-```
-### Fix broken health bar
-``` json
-{
-    "FFlagEnableAlwaysOpenUnibar2": "False"
+    "FFlagEnableInGameMenuChrome": "True"
 }
 ```
 ### red font
-###### You need to use Default Roblox Font to activate this. Also it can be glitchy in the settings menu
+###### might not work idk
 ```json
 {
     "FStringDebugHighlightSpecificFont": "rbxasset://fonts/families/BuilderSans.json"
@@ -749,51 +393,12 @@ Fast Flags:
 ```json
 {
     "FIntNewInGameMenuPercentRollout3": "100",
-    "FFlagEnableInGameMenuControls": "False",
-    "FFlagDisableNewIGMinDUA": "True",
-    "FFlagEnableInGameMenuChromeABTest4": "False"
-}
-```
-### Fix the 2015 escape menu
-``` json
-{
-    "FFlagFixReportButtonCutOff": "False"
-}
-```
-### Reset Character instead of Respawn in Experience Menu
-``` json
-{
-    "FFlagInExperienceMenuResetButtonTextToRespawn": "False"
 }
 ```
 ### Enable Highlight Outlines on any Rendering API
 ``` json
 {
     "FFlagHighlightOutlinesOnMobile": "True"
-}
-```
-### 00
-``` json
-{
-    "FFlagAppChatAddConnectUnibarForActiveSquad": "False"
-}
-```
-### Reshuffle Party Icons
-``` json
-{
-    "FFlagReshufflePartyIconsInUnibar": "False"
-}
-```
-### Rename Party 2 Roblox Chat
-``` json
-{
-    "FFlagAppChatRebrandStringUpdates": "False"
-}
-```
-### Disable Avatar Chat
-``` json
-{
-    "FFlagAvatarChatServiceEnabled3": "False"
 }
 ```
 ### Break Collectible Icon
@@ -805,7 +410,7 @@ Fast Flags:
 ### Break Top Bar Menu
 ``` json
 {
-    "FStringNewInGameMenuForceds": "UserID",
+    "FStringNewInGameMenuForcedUserIds": "UserID",
     "FFlagEnableInGameMenuChrome": "True"
 }
 ```
@@ -815,22 +420,10 @@ Fast Flags:
     "FFlagDebugDontRenderScreenGui": "True"
 }
 ```
-### No Transparency V4 Menu (2023)
-``` json
-{
-    "FStringInGameMenuModernizationStickyBarForcedUserIds": "UserID"
-}
-```
 ### Overlay that shows what you type
 ``` json
 {
     "FFlagDebugTextBoxServiceShowOverlay": "True"
-}
-```
-### Ammount of lines to show at once for above
-``` json
-{
-    "DFIntTextBoxServiceHistorySize": "1"
 }
 ```
 ### Hides gui
@@ -839,47 +432,10 @@ Fast Flags:
     "FFlagDebugAdornsDisabled":  "True"
 }
 ```
-### Disable Camera & Selfview
-``` json
-{
-    "FFlagSelfieViewEnabled": "True"
-}
-```
 ### Disable Bubble Chat
 ``` json
 {
     "FFlagEnableBubbleChatFromChatService": "False"
-}
-```
-### Disable Autocomplete
-``` json
-{
-    "FFlagEnableCommandAutocomplete": "False"
-}
-```
-### ShadowMap Bias
-##### Future & ShadowMap only
-``` json
-{
-    "FIntRenderShadowmapBias": "75"
-}
-```
-### Simulation Optimization Flag
-##### Optimization, latency, delay FFlag
-``` json
-{
-   "FFlagSimEnableDCD16": "true"
-}
-```
-### Unified Lighting Blend Zone
-##### Smaller value = FPS boost > Bigger value = FPS loss
-##### Explanation:
-##### Controls the distance over which light transitions blend.
-##### Lower values create sharper transitions.
-##### Higher values make transitions smoother.
-``` json
-{
-     "FIntUnifiedLightingBlendZone": 400
 }
 ```
 ### Disable In-Game Purchases
@@ -889,38 +445,11 @@ Fast Flags:
     "DFFlagOrder66": "True"
 }
 ```
-### Vertex Smoothing Group Tolerance
-##### The FIntVertexSmoothingGroupTolerance flag controls the tolerance level for vertex smoothing groups in 3D graphics.
-##### Lower values result in lower smoothing quality as more errors are tolerated, making models appear more angular and less smooth.
-##### Higher values increase the smoothing accuracy, leading to smoother, more visually appealing models with fewer artifacts.
-``` json
-{
-    "FIntVertexSmoothingGroupTolerance": "1000"
-}
-```
-### Object Reflection Support!
-``` json
-{
-    "FFlagObjectReflectionSupport": "true"
-}
-```
 ### Better shadows
 ##### Loading will take longer but the shadows are much better
 ``` json
 {
     "FFlagRenderInitShadowmaps": "true"
-}
-```
-### Mini webview
-``` json
-{
-    "FFlagWebViewProtocol": "False"
-}
-```
-### Disable Haptics Option
-``` json
-{
-    "FFlagAddHapticsToggle": "False"
 }
 ```
 ### Raycast Performance Improvements
@@ -934,10 +463,7 @@ Fast Flags:
 ##### [@CloneTrooper1019](https://x.com/MaximumADHD/status/1832331711486865769)
 ``` json
 {
-    "DFFlagUseVisBugChecks": "True",
-    "FFlagEnableVisBugChecks27": "True",
-    "FFlagVisBugChecksThreadYield": "True",
-    "FIntEnableVisBugChecksHundredthPercent27": "100"
+    "DFFlagUseVisBugChecks": "True"
 }
 ```
 ### Remove Unrequired Connections
@@ -947,125 +473,11 @@ Fast Flags:
     "FFlagUserUpdateInputConnections": "true"
 }
 ```
-### Walk Speed Scale Based
-##### Taller characters have a slower walking animation.
-``` json
-{
-    "DFFlagUserAnimateScaleRun ": "true"
-}
-```
-### V1 Menu Fix
-``` json
-{
-    "FFlagSettingsHubIndependentBackgroundVisibility": "True",
-    "FFlagFixReportButtonCutOff": "False"
-}
-```
-### stop screaming bro
-``` json
-{
-    "FIntDebugTextElongationFactor": "6785"
-}
-```
-### Removes the new ingame chrome chat button
-###### if you use v1 menu, this reverts the chat icon to the old one
-###### @kezcn
-```json
-{
-    "FFlagAppChatInExperienceEnabledV647new": "False"
-}
-```
-### V1 Menu
-``` json
-{
-    "FFlagDisableNewIGMinDUA": "True",
-    "FFlagEnableInGameMenuControls": "False",
-    "FFlagEnableInGameMenuModernization": "False",
-    "FFlagEnableMenuControlsABTest": "False",
-    "FFlagEnableMenuModernizationABTest": "False",
-    "FFlagEnableMenuModernizationABTest2": "False",
-    "FFlagEnableV3MenuABTest3": "False",
-"FFlagSettingsHubIndependentBackgroundVisibility": "True",
-    "FFlagFixReportButtonCutOff": "False"
-}
-```
-### V2 Menu
-###### lets u reset in all games
-``` json
-{
-    "FIntNewInGameMenuPercentRollout3": "100",
-    "FFlagEnableInGameMenuControls": "False",
-    "FFlagDisableNewIGMinDUA": "True",
-    "FFlagEnableInGameMenuChromeABTest4": "False"
-}
-```
-### Disable Profile Picture Customization
-``` json
-{
-     "FFlagAXDefaultAvatarToShopEnabled3": "False"
-}
-```
-### Preferred Text Size Settings (new)
-``` json
-{
-  "FFlagEnablePreferredTextSizeGuiService": true,
-  "FFlagEnablePreferredTextSizeScale": true,
-  "FFlagEnablePreferredTextSizeScalePerLayerCollector": true,
-  "FFlagEnablePreferredTextSizeSettingInMenus2": true,
-  "FFlagEnablePreferredTextSizeStyleFixesInCaptureMenu": true,
-  "FFlagEnablePreferredTextSizeStyleFixesInExperienceMenu": true,
-  "FFlagEnablePreferredTextSizeStyleFixesInPlayerList": true,
-  "FFlagPreferredTextSizeSettingBetaFeature": true,
-  "FIntPreferredTextSizeSettingBetaFeatureRolloutPercent": 100,
-  "FFlagEnablePreferredTextSizeConnection": true,
-  "FFlagEnablePreferredTextSizeStyleFixesAddFriends": true,
-  "FFlagEnablePreferredTextSizeStyleFixesGameTile": true,
-  "FFlagEnablePreferredTextSizeStyleFixesInAppShell3": true,
-  "FFlagEnablePreferredTextSizeStyleFixesInPurchasePrompt": true,
-  "FFlagEnablePreferredTextSizeStyleFixesInReportMenu": true
-}
 ### texture override
 ```json
 {
     "DFFlagTextureQualityOverrideEnabled": "True",
     "DFIntTextureQualityOverride": "3"
-}
-```
-### Keyboard Latency
-##### Default value: 500 > > Lower value = more responsive keyboard.
-##### This flag controls the keyboard input latency in milliseconds.By setting this value to 1, it minimizes the delay between key presses and the game's recognition of the input, effectively improving keyboard responsiveness. However, such a low value might cause excessively frequent key registration, which can lead to issues like repeated actions during key holds. The default value is 500 milliseconds, providing a balance between input responsiveness and preventing unintentional key repetition.
-``` json
-{
-  "FIntActivatedCountTimerMSKeyboard": 500
-}
-```
-### Mouse Latency
-##### Default value: 500 > > Lower value = more responsive mouse
-##### This flag determines the mouse input delay in milliseconds. A lower value (such as 1) will reduce the latency between mouse movement or clicks and the game's response, making the mouse feel more responsive. However, setting the value too low could result in excessively sensitive mouse input, potentially leading to issues like unintended multiple clicks or overly sensitive pointer movements. The default value of 500 milliseconds provides a balance between responsiveness and control, reducing the risk of input errors.
-``` json
-{
-  "FIntActivatedCountTimerMSMouse": 500
-}
-```
-### Shoe Skip Render Mesh
-##### skips shoe rendering
-``` json
-{
-  "FFlagShoeSkipRenderMesh": "false"
-}
-```
-### Render Skip Reading Shader Data
-##### Skips reading shader data
-``` json
-{
-  "FFlagRenderSkipReadingShaderData": "false"
-}
-```
-### Render Shadow Skip Huge Culling
-##### Skipping shadows of large objects in the distance
-``` json
-{
-  "FFlagRenderShadowSkipHugeCulling": "true"
 }
 ```
 ### Smoother/Faster Input
@@ -1084,106 +496,11 @@ Fast Flags:
 ###### @blobanium
 ```json
 {
-    "FFlagMovePrerender": "True"
+    "FFlagMovePrerender": "True",
+    "FFlagMovePrerenderV2": "true"
 }
 ```
-### New Version of Render
-##### Enables an updated rendering system to improve performance and manage render calls.
-``` json
-{
-  "FFlagRenderCBRefactor2": true
-}
-```
-### Directional Attenuation Max Points
-##### Tip: Lower values: May improve performance but reduce lighting accuracy. > Higher values: Increase lighting accuracy at the cost of performance, potentially leading to slower rendering, especially in scenes with complex lighting setups.
-##### Explanation:
-##### Limits the maximum number of sample points for calculating directional light attenuation..
-##### Lower values improve performance but may reduce lighting accuracy.
-##### Higher values increase lighting accuracy but may slow rendering in complex lighting setups.
-``` json
-{
-   "FIntDirectionalAttenuationMaxPoints": "400"
-}
-```
-### Simulation Optimization Flag
-##### Be mindful that while optimization can improve performance, it may also require testing to ensure that the behavior of sets remains consistent and that no necessary details are lost during the optimization process. The DFFlagSimOptimizeSetSize flag is used to optimize the size of sets in simulations. Enabling this flag activates optimization techniques that reduce the size of simulation sets, leading to better performance by decreasing memory usage and potentially improving processing speeds during simulations.
-``` json
-{
-  "DFFlagSimOptimizeSetSize": true
-}
-```
-### Old Version of FRM
-##### Graphics quality will use an older approach/method which may help improve FPS for some users.
-##### true = new
-``` json
-{   
-   "FFlagFRMRefactor": "false"
-}
-```
-### old luaapp chat button
-``` json
-{
-    "FStringNewChatTabExperimentLayerValue": "2024MUSIC"
-}
-```
-``` json
-{
-    "FFlagEnableNewChatTabExperiment5": "False"
-}
-```
-# textures
-### No Textures
-``` json
-{
-          "FStringPartTexturePackTable2022": "{\"glass\":{\"ids\":[\"rbxassetid://9873284556\",\"rbxassetid://9438453972\"],\"color\":[254,254,254,7]}}",
-          "FStringPartTexturePackTablePre2022": "{\"glass\":{\"ids\":[\"rbxassetid://7547304948\",\"rbxassetid://7546645118\"],\"color\":[254,254,254,7]}}",
-          "FStringTerrainMaterialTable2022": "",
-          "FStringTerrainMaterialTablePre2022": "",
-          "FFlagMSRefactor5": "False"
-}
-```
-### Black Textures
-``` json
-{
-    "FStringPartTexturePackTable2022": "{\u0022foil\u0022:{\u0022ids\u0022:[\u0022rbxassetid://0\u0022,\u0022rbxassetid://0\u0022],\u0022color\u0022:[55, 55, 55, 255]},\u0022asphalt\u0022:{\u0022ids\u0022:[\u0022rbxassetid://0\u0022,\u0022rbxassetid://0\u0022],\u0022color\u0022:[55, 55, 55, 255]},\u0022basalt\u0022:{\u0022ids\u0022:[\u0022rbxassetid://0\u0022,\u0022rbxassetid://0\u0022],\u0022color\u0022:[55, 55, 55, 255]},\u0022brick\u0022:{\u0022ids\u0022:[\u0022rbxassetid://0\u0022,\u0022rbxassetid://0\u0022],\u0022color\u0022:[55, 55, 55, 255]},\u0022cobblestone\u0022:{\u0022ids\u0022:[\u0022rbxassetid://0\u0022,\u0022rbxassetid://0\u0022],\u0022color\u0022:[55, 55, 55, 255]},\u0022concrete\u0022:{\u0022ids\u0022:[\u0022rbxassetid://0\u0022,\u0022rbxassetid://0\u0022],\u0022color\u0022:[55, 55, 55, 255]},\u0022crackedlava\u0022:{\u0022ids\u0022:[\u0022rbxassetid://0\u0022,\u0022rbxassetid://0\u0022],\u0022color\u0022:[55, 55, 55, 255]},\u0022diamondplate\u0022:{\u0022ids\u0022:[\u0022rbxassetid://0\u0022,\u0022rbxassetid://0\u0022],\u0022color\u0022:[55, 55, 55, 255]},\u0022fabric\u0022:{\u0022ids\u0022:[\u0022rbxassetid://0\u0022,\u0022rbxassetid://0\u0022],\u0022color\u0022:[55, 55, 55, 255]},\u0022glacier\u0022:{\u0022ids\u0022:[\u0022rbxassetid://0\u0022,\u0022rbxassetid://0\u0022],\u0022color\u0022:[55, 55, 55, 255]},\u0022glass\u0022:{\u0022ids\u0022:[\"rbxassetid://9873284556\",\"rbxassetid://9438453972\"],\u0022color\u0022:[55, 55, 55, 255]},\u0022granite\u0022:{\u0022ids\u0022:[\u0022rbxassetid://0\u0022,\u0022rbxassetid://0\u0022],\u0022color\u0022:[55, 55, 55, 255]},\u0022grass\u0022:{\u0022ids\u0022:[\u0022rbxassetid://0\u0022,\u0022rbxassetid://0\u0022],\u0022color\u0022:[55, 55, 55, 255]},\u0022ground\u0022:{\u0022ids\u0022:[\u0022rbxassetid://0\u0022,\u0022rbxassetid://0\u0022],\u0022color\u0022:[55, 55, 55, 255]},\u0022ice\u0022:{\u0022ids\u0022:[\u0022rbxassetid://0\u0022,\u0022rbxassetid://0\u0022],\u0022color\u0022:[55, 55, 55, 255]},\u0022leafygrass\u0022:{\u0022ids\u0022:[\u0022rbxassetid://0\u0022,\u0022rbxassetid://0\u0022],\u0022color\u0022:[55, 55, 55, 255]},\u0022limestone\u0022:{\u0022ids\u0022:[\u0022rbxassetid://0\u0022,\u0022rbxassetid://0\u0022],\u0022color\u0022:[55, 55, 55, 255]},\u0022marble\u0022:{\u0022ids\u0022:[\u0022rbxassetid://0\u0022,\u0022rbxassetid://0\u0022],\u0022color\u0022:[55, 55, 55, 255]},\u0022metal\u0022:{\u0022ids\u0022:[\u0022rbxassetid://0\u0022,\u0022rbxassetid://0\u0022],\u0022color\u0022:[55, 55, 55, 255]},\u0022mud\u0022:{\u0022ids\u0022:[\u0022rbxassetid://0\u0022,\u0022rbxassetid://0\u0022],\u0022color\u0022:[55, 55, 55, 255]},\u0022pavement\u0022:{\u0022ids\u0022:[\u0022rbxassetid://0\u0022,\u0022rbxassetid://0\u0022],\u0022color\u0022:[55, 55, 55, 255]},\u0022pebble\u0022:{\u0022ids\u0022:[\u0022rbxassetid://0\u0022,\u0022rbxassetid://0\u0022],\u0022color\u0022:[55, 55, 55, 255]},\u0022plastic\u0022:{\u0022ids\u0022:[\u0022\u0022,\u0022rbxassetid://0\u0022],\u0022color\u0022:[55, 55, 55, 255]},\u0022rock\u0022:{\u0022ids\u0022:[\u0022rbxassetid://0\u0022,\u0022rbxassetid://0\u0022],\u0022color\u0022:[55, 55, 55, 255]},\u0022corrodedmetal\u0022:{\u0022ids\u0022:[\u0022rbxassetid://0\u0022,\u0022rbxassetid://0\u0022],\u0022color\u0022:[55, 55, 55, 255]},\u0022salt\u0022:{\u0022ids\u0022:[\u0022rbxassetid://0\u0022,\u0022rbxassetid://0\u0022],\u0022color\u0022:[55, 55, 55, 255]},\u0022sand\u0022:{\u0022ids\u0022:[\u0022rbxassetid://0\u0022,\u0022rbxassetid://0\u0022],\u0022color\u0022:[55, 55, 55, 255]},\u0022sandstone\u0022:{\u0022ids\u0022:[\u0022rbxassetid://0\u0022,\u0022rbxassetid://0\u0022],\u0022color\u0022:[55, 55, 55, 255]},\u0022slate\u0022:{\u0022ids\u0022:[\u0022rbxassetid://0\u0022,\u0022rbxassetid://0\u0022],\u0022color\u0022:[55, 55, 55, 255]},\u0022snow\u0022:{\u0022ids\u0022:[\u0022rbxassetid://0\u0022,\u0022rbxassetid://0\u0022],\u0022color\u0022:[55, 55, 55, 255]},\u0022wood\u0022:{\u0022ids\u0022:[\u0022rbxassetid://0\u0022,\u0022rbxassetid://0\u0022],\u0022color\u0022:[55, 55, 55, 255]},\u0022woodplanks\u0022:{\u0022ids\u0022:[\u0022rbxassetid://0\u0022,\u0022rbxassetid://0\u0022],\u0022color\u0022:[55, 55, 55, 255]}}",
-    "FStringPartTexturePackTablePre2022": "{\u0022foil\u0022:{\u0022ids\u0022:[\u0022rbxassetid://0\u0022,\u0022rbxassetid://0\u0022],\u0022color\u0022:[55, 55, 55, 255]},\u0022brick\u0022:{\u0022ids\u0022:[\u0022rbxassetid://0\u0022,\u0022rbxassetid://0\u0022],\u0022color\u0022:[55, 55, 55, 255]},\u0022cobblestone\u0022:{\u0022ids\u0022:[\u0022rbxassetid://0\u0022,\u0022rbxassetid://0\u0022],\u0022color\u0022:[55, 55, 55, 255]},\u0022concrete\u0022:{\u0022ids\u0022:[\u0022rbxassetid://0\u0022,\u0022rbxassetid://0\u0022],\u0022color\u0022:[55, 55, 55, 255]},\u0022diamondplate\u0022:{\u0022ids\u0022:[\u0022rbxassetid://0\u0022,\u0022rbxassetid://0\u0022],\u0022color\u0022:[55, 55, 55, 255]},\u0022fabric\u0022:{\u0022ids\u0022:[\u0022rbxassetid://0\u0022,\u0022rbxassetid://0\u0022],\u0022color\u0022:[55, 55, 55, 255]},\u0022glass\u0022:{\u0022ids\u0022:[\"rbxassetid://7547304948\",\"rbxassetid://7546645118\"],\u0022color\u0022:[55, 55, 55, 255]},\u0022granite\u0022:{\u0022ids\u0022:[\u0022rbxassetid://0\u0022,\u0022rbxassetid://0\u0022],\u0022color\u0022:[55, 55, 55, 255]},\u0022grass\u0022:{\u0022ids\u0022:[\u0022rbxassetid://0\u0022,\u0022rbxassetid://0\u0022],\u0022color\u0022:[55, 55, 55, 255]},\u0022ice\u0022:{\u0022ids\u0022:[\u0022rbxassetid://0\u0022,\u0022rbxassetid://0\u0022],\u0022color\u0022:[55, 55, 55, 255]},\u0022marble\u0022:{\u0022ids\u0022:[\u0022rbxassetid://0\u0022,\u0022rbxassetid://0\u0022],\u0022color\u0022:[55, 55, 55, 255]},\u0022metal\u0022:{\u0022ids\u0022:[\u0022rbxassetid://0\u0022,\u0022rbxassetid://0\u0022],\u0022color\u0022:[55, 55, 55, 255]},\u0022pebble\u0022:{\u0022ids\u0022:[\u0022rbxassetid://0\u0022,\u0022rbxassetid://0\u0022],\u0022color\u0022:[55, 55, 55, 255]},\u0022corrodedmetal\u0022:{\u0022ids\u0022:[\u0022rbxassetid://0\u0022,\u0022rbxassetid://0\u0022],\u0022color\u0022:[55, 55, 55, 255]},\u0022sand\u0022:{\u0022ids\u0022:[\u0022rbxassetid://0\u0022,\u0022rbxassetid://0\u0022],\u0022color\u0022:[55, 55, 55, 255]},\u0022slate\u0022:{\u0022ids\u0022:[\u0022rbxassetid://0\u0022,\u0022rbxassetid://0\u0022],\u0022color\u0022:[55, 55, 55, 255]},\u0022wood\u0022:{\u0022ids\u0022:[\u0022rbxassetid://0\u0022,\u0022rbxassetid://0\u0022],\u0022color\u0022:[55, 55, 55, 255]},\u0022woodplanks\u0022:{\u0022ids\u0022:[\u0022rbxassetid://0\u0022,\u0022rbxassetid://0\u0022],\u0022color\u0022:[55, 55, 55, 255]},\u0022asphalt\u0022:{\u0022ids\u0022:[\u0022rbxassetid://0\u0022,\u0022rbxassetid://0\u0022],\u0022color\u0022:[55, 55, 55, 255]},\u0022basalt\u0022:{\u0022ids\u0022:[\u0022rbxassetid://0\u0022,\u0022rbxassetid://0\u0022],\u0022color\u0022:[55, 55, 55, 255]},\u0022crackedlava\u0022:{\u0022ids\u0022:[\u0022rbxassetid://0\u0022,\u0022rbxassetid://0\u0022],\u0022color\u0022:[55, 55, 55, 255]},\u0022glacier\u0022:{\u0022ids\u0022:[\u0022rbxassetid://0\u0022,\u0022rbxassetid://0\u0022],\u0022color\u0022:[55, 55, 55, 255]},\u0022ground\u0022:{\u0022ids\u0022:[\u0022rbxassetid://0\u0022,\u0022rbxassetid://0\u0022],\u0022color\u0022:[55, 55, 55, 255]},\u0022leafygrass\u0022:{\u0022ids\u0022:[\u0022rbxassetid://0\u0022,\u0022rbxassetid://0\u0022],\u0022color\u0022:[55, 55, 55, 255]},\u0022limestone\u0022:{\u0022ids\u0022:[\u0022rbxassetid://0\u0022,\u0022rbxassetid://0\u0022],\u0022color\u0022:[55, 55, 55, 255]},\u0022mud\u0022:{\u0022ids\u0022:[\u0022rbxassetid://0\u0022,\u0022rbxassetid://0\u0022],\u0022color\u0022:[55, 55, 55, 255]},\u0022pavement\u0022:{\u0022ids\u0022:[\u0022rbxassetid://0\u0022,\u0022rbxassetid://0\u0022],\u0022color\u0022:[55, 55, 55, 255]},\u0022rock\u0022:{\u0022ids\u0022:[\u0022rbxassetid://0\u0022,\u0022rbxassetid://0\u0022],\u0022color\u0022:[55, 55, 55, 255]},\u0022salt\u0022:{\u0022ids\u0022:[\u0022rbxassetid://0\u0022,\u0022rbxassetid://0\u0022],\u0022color\u0022:[55, 55, 55, 255]},\u0022sandstone\u0022:{\u0022ids\u0022:[\u0022rbxassetid://0\u0022,\u0022rbxassetid://0\u0022],\u0022color\u0022:[55, 55, 55, 255]},\u0022snow\u0022:{\u0022ids\u0022:[\u0022rbxassetid://0\u0022,\u0022rbxassetid://0\u0022],\u0022color\u0022:[55, 55, 55, 255]}}",
-    "FFlagMSRefactor5": "False"
-}
-```
-### White Textures
-``` json
-{
-    "FStringPartTexturePackTable2022": "{\u0022foil\u0022:{\u0022ids\u0022:[\u0022rbxassetid://0\u0022,\u0022rbxassetid://0\u0022],\u0022color\u0022:[255, 255, 255]},\u0022asphalt\u0022:{\u0022ids\u0022:[\u0022rbxassetid://0\u0022,\u0022rbxassetid://0\u0022],\u0022color\u0022:[255, 255, 255]},\u0022basalt\u0022:{\u0022ids\u0022:[\u0022rbxassetid://0\u0022,\u0022rbxassetid://0\u0022],\u0022color\u0022:[255, 255, 255]},\u0022brick\u0022:{\u0022ids\u0022:[\u0022rbxassetid://0\u0022,\u0022rbxassetid://0\u0022],\u0022color\u0022:[255, 255, 255]},\u0022cobblestone\u0022:{\u0022ids\u0022:[\u0022rbxassetid://0\u0022,\u0022rbxassetid://0\u0022],\u0022color\u0022:[255, 255, 255]},\u0022concrete\u0022:{\u0022ids\u0022:[\u0022rbxassetid://0\u0022,\u0022rbxassetid://0\u0022],\u0022color\u0022:[255, 255, 255]},\u0022crackedlava\u0022:{\u0022ids\u0022:[\u0022rbxassetid://0\u0022,\u0022rbxassetid://0\u0022],\u0022color\u0022:[255, 255, 255]},\u0022diamondplate\u0022:{\u0022ids\u0022:[\u0022rbxassetid://0\u0022,\u0022rbxassetid://0\u0022],\u0022color\u0022:[255, 255, 255]},\u0022fabric\u0022:{\u0022ids\u0022:[\u0022rbxassetid://0\u0022,\u0022rbxassetid://0\u0022],\u0022color\u0022:[255, 255, 255]},\u0022glacier\u0022:{\u0022ids\u0022:[\u0022rbxassetid://0\u0022,\u0022rbxassetid://0\u0022],\u0022color\u0022:[255, 255, 255]},\u0022glass\u0022:{\u0022ids\u0022:[\"rbxassetid://9873284556\",\"rbxassetid://9438453972\"],\u0022color\u0022:[255, 255, 255]},\u0022granite\u0022:{\u0022ids\u0022:[\u0022rbxassetid://0\u0022,\u0022rbxassetid://0\u0022],\u0022color\u0022:[255, 255, 255]},\u0022grass\u0022:{\u0022ids\u0022:[\u0022rbxassetid://0\u0022,\u0022rbxassetid://0\u0022],\u0022color\u0022:[255, 255, 255]},\u0022ground\u0022:{\u0022ids\u0022:[\u0022rbxassetid://0\u0022,\u0022rbxassetid://0\u0022],\u0022color\u0022:[255, 255, 255]},\u0022ice\u0022:{\u0022ids\u0022:[\u0022rbxassetid://0\u0022,\u0022rbxassetid://0\u0022],\u0022color\u0022:[255, 255, 255]},\u0022leafygrass\u0022:{\u0022ids\u0022:[\u0022rbxassetid://0\u0022,\u0022rbxassetid://0\u0022],\u0022color\u0022:[255, 255, 255]},\u0022limestone\u0022:{\u0022ids\u0022:[\u0022rbxassetid://0\u0022,\u0022rbxassetid://0\u0022],\u0022color\u0022:[255, 255, 255]},\u0022marble\u0022:{\u0022ids\u0022:[\u0022rbxassetid://0\u0022,\u0022rbxassetid://0\u0022],\u0022color\u0022:[255, 255, 255]},\u0022metal\u0022:{\u0022ids\u0022:[\u0022rbxassetid://0\u0022,\u0022rbxassetid://0\u0022],\u0022color\u0022:[255, 255, 255]},\u0022mud\u0022:{\u0022ids\u0022:[\u0022rbxassetid://0\u0022,\u0022rbxassetid://0\u0022],\u0022color\u0022:[255, 255, 255]},\u0022pavement\u0022:{\u0022ids\u0022:[\u0022rbxassetid://0\u0022,\u0022rbxassetid://0\u0022],\u0022color\u0022:[255, 255, 255]},\u0022pebble\u0022:{\u0022ids\u0022:[\u0022rbxassetid://0\u0022,\u0022rbxassetid://0\u0022],\u0022color\u0022:[255, 255, 255]},\u0022plastic\u0022:{\u0022ids\u0022:[\u0022\u0022,\u0022rbxassetid://0\u0022],\u0022color\u0022:[255, 255, 255]},\u0022rock\u0022:{\u0022ids\u0022:[\u0022rbxassetid://0\u0022,\u0022rbxassetid://0\u0022],\u0022color\u0022:[255, 255, 255]},\u0022corrodedmetal\u0022:{\u0022ids\u0022:[\u0022rbxassetid://0\u0022,\u0022rbxassetid://0\u0022],\u0022color\u0022:[255, 255, 255]},\u0022salt\u0022:{\u0022ids\u0022:[\u0022rbxassetid://0\u0022,\u0022rbxassetid://0\u0022],\u0022color\u0022:[255, 255, 255]},\u0022sand\u0022:{\u0022ids\u0022:[\u0022rbxassetid://0\u0022,\u0022rbxassetid://0\u0022],\u0022color\u0022:[255, 255, 255]},\u0022sandstone\u0022:{\u0022ids\u0022:[\u0022rbxassetid://0\u0022,\u0022rbxassetid://0\u0022],\u0022color\u0022:[255, 255, 255]},\u0022slate\u0022:{\u0022ids\u0022:[\u0022rbxassetid://0\u0022,\u0022rbxassetid://0\u0022],\u0022color\u0022:[255, 255, 255]},\u0022snow\u0022:{\u0022ids\u0022:[\u0022rbxassetid://0\u0022,\u0022rbxassetid://0\u0022],\u0022color\u0022:[255, 255, 255]},\u0022wood\u0022:{\u0022ids\u0022:[\u0022rbxassetid://0\u0022,\u0022rbxassetid://0\u0022],\u0022color\u0022:[255, 255, 255]},\u0022woodplanks\u0022:{\u0022ids\u0022:[\u0022rbxassetid://0\u0022,\u0022rbxassetid://0\u0022],\u0022color\u0022:[255, 255, 255]}}",
-    "FStringPartTexturePackTablePre2022": "{\u0022foil\u0022:{\u0022ids\u0022:[\u0022rbxassetid://0\u0022,\u0022rbxassetid://0\u0022],\u0022color\u0022:[255, 255, 255]},\u0022brick\u0022:{\u0022ids\u0022:[\u0022rbxassetid://0\u0022,\u0022rbxassetid://0\u0022],\u0022color\u0022:[255, 255, 255]},\u0022cobblestone\u0022:{\u0022ids\u0022:[\u0022rbxassetid://0\u0022,\u0022rbxassetid://0\u0022],\u0022color\u0022:[255, 255, 255]},\u0022concrete\u0022:{\u0022ids\u0022:[\u0022rbxassetid://0\u0022,\u0022rbxassetid://0\u0022],\u0022color\u0022:[255, 255, 255]},\u0022diamondplate\u0022:{\u0022ids\u0022:[\u0022rbxassetid://0\u0022,\u0022rbxassetid://0\u0022],\u0022color\u0022:[255, 255, 255]},\u0022fabric\u0022:{\u0022ids\u0022:[\u0022rbxassetid://0\u0022,\u0022rbxassetid://0\u0022],\u0022color\u0022:[255, 255, 255]},\u0022glass\u0022:{\u0022ids\u0022:[\"rbxassetid://7547304948\",\"rbxassetid://7546645118\"],\u0022color\u0022:[255, 255, 255]},\u0022granite\u0022:{\u0022ids\u0022:[\u0022rbxassetid://0\u0022,\u0022rbxassetid://0\u0022],\u0022color\u0022:[255, 255, 255]},\u0022grass\u0022:{\u0022ids\u0022:[\u0022rbxassetid://0\u0022,\u0022rbxassetid://0\u0022],\u0022color\u0022:[255, 255, 255]},\u0022ice\u0022:{\u0022ids\u0022:[\u0022rbxassetid://0\u0022,\u0022rbxassetid://0\u0022],\u0022color\u0022:[255, 255, 255]},\u0022marble\u0022:{\u0022ids\u0022:[\u0022rbxassetid://0\u0022,\u0022rbxassetid://0\u0022],\u0022color\u0022:[255, 255, 255]},\u0022metal\u0022:{\u0022ids\u0022:[\u0022rbxassetid://0\u0022,\u0022rbxassetid://0\u0022],\u0022color\u0022:[255, 255, 255]},\u0022pebble\u0022:{\u0022ids\u0022:[\u0022rbxassetid://0\u0022,\u0022rbxassetid://0\u0022],\u0022color\u0022:[255, 255, 255]},\u0022corrodedmetal\u0022:{\u0022ids\u0022:[\u0022rbxassetid://0\u0022,\u0022rbxassetid://0\u0022],\u0022color\u0022:[255, 255, 255]},\u0022sand\u0022:{\u0022ids\u0022:[\u0022rbxassetid://0\u0022,\u0022rbxassetid://0\u0022],\u0022color\u0022:[255, 255, 255]},\u0022slate\u0022:{\u0022ids\u0022:[\u0022rbxassetid://0\u0022,\u0022rbxassetid://0\u0022],\u0022color\u0022:[255, 255, 255]},\u0022wood\u0022:{\u0022ids\u0022:[\u0022rbxassetid://0\u0022,\u0022rbxassetid://0\u0022],\u0022color\u0022:[255, 255, 255]},\u0022woodplanks\u0022:{\u0022ids\u0022:[\u0022rbxassetid://0\u0022,\u0022rbxassetid://0\u0022],\u0022color\u0022:[255, 255, 255]},\u0022asphalt\u0022:{\u0022ids\u0022:[\u0022rbxassetid://0\u0022,\u0022rbxassetid://0\u0022],\u0022color\u0022:[255, 255, 255]},\u0022basalt\u0022:{\u0022ids\u0022:[\u0022rbxassetid://0\u0022,\u0022rbxassetid://0\u0022],\u0022color\u0022:[255, 255, 255]},\u0022crackedlava\u0022:{\u0022ids\u0022:[\u0022rbxassetid://0\u0022,\u0022rbxassetid://0\u0022],\u0022color\u0022:[255, 255, 255]},\u0022glacier\u0022:{\u0022ids\u0022:[\u0022rbxassetid://0\u0022,\u0022rbxassetid://0\u0022],\u0022color\u0022:[255, 255, 255]},\u0022ground\u0022:{\u0022ids\u0022:[\u0022rbxassetid://0\u0022,\u0022rbxassetid://0\u0022],\u0022color\u0022:[255, 255, 255]},\u0022leafygrass\u0022:{\u0022ids\u0022:[\u0022rbxassetid://0\u0022,\u0022rbxassetid://0\u0022],\u0022color\u0022:[255, 255, 255]},\u0022limestone\u0022:{\u0022ids\u0022:[\u0022rbxassetid://0\u0022,\u0022rbxassetid://0\u0022],\u0022color\u0022:[255, 255, 255]},\u0022mud\u0022:{\u0022ids\u0022:[\u0022rbxassetid://0\u0022,\u0022rbxassetid://0\u0022],\u0022color\u0022:[255, 255, 255]},\u0022pavement\u0022:{\u0022ids\u0022:[\u0022rbxassetid://0\u0022,\u0022rbxassetid://0\u0022],\u0022color\u0022:[255, 255, 255]},\u0022rock\u0022:{\u0022ids\u0022:[\u0022rbxassetid://0\u0022,\u0022rbxassetid://0\u0022],\u0022color\u0022:[255, 255, 255]},\u0022salt\u0022:{\u0022ids\u0022:[\u0022rbxassetid://0\u0022,\u0022rbxassetid://0\u0022],\u0022color\u0022:[255, 255, 255]},\u0022sandstone\u0022:{\u0022ids\u0022:[\u0022rbxassetid://0\u0022,\u0022rbxassetid://0\u0022],\u0022color\u0022:[255, 255, 255]},\u0022snow\u0022:{\u0022ids\u0022:[\u0022rbxassetid://0\u0022,\u0022rbxassetid://0\u0022],\u0022color\u0022:[255, 255, 255]}}",
-    "FFlagMSRefactor5" :"False"
-}
-```
-
-### Minecraft Textures
-``` json
-{
-    "FStringPartTexturePackTablePre2022": "{\"foil\":{\"ids\":[\"rbxassetid://9873266399\",\"rbxassetid://9438410239\"],\"color\":[238,238,238,255]},\"asphalt\":{\"ids\":[\"rbxassetid://9867974823\",\"rbxassetid://9844502433\"],\"color\":[227,227,228,234]},\"basalt\":{\"ids\":[\"rbxassetid://11545552824\",\"rbxassetid://11545440462\"],\"color\":[160,160,158,238]},\"brick\":{\"ids\":[\"rbxassetid://9924770651\",\"rbxassetid://9924770538\"],\"color\":[229,214,205,227]},\"cobblestone\":{\"ids\":[\"rbxassetid://9919719550\",\"rbxassetid://9438453972\"],\"color\":[218,219,219,243]},\"concrete\":{\"ids\":[\"rbxassetid://9924775913\",\"rbxassetid://9924775826\"],\"color\":[225,225,224,255]},\"crackedlava\":{\"ids\":[\"rbxassetid://9920485426\",\"rbxassetid://9438453972\"],\"color\":[76,79,81,156]},\"diamondplate\":{\"ids\":[\"rbxassetid://10237721036\",\"rbxassetid://9438453972\"],\"color\":[210,210,210,255]},\"fabric\":{\"ids\":[\"rbxassetid://9920517963\",\"rbxassetid://9438453972\"],\"color\":[221,221,221,255]},\"glacier\":{\"ids\":[\"rbxassetid://9920518995\",\"rbxassetid://9438453972\"],\"color\":[225,229,229,243]},\"glass\":{\"ids\":[\"rbxassetid://9873284556\",\"rbxassetid://9438453972\"],\"color\":[254,254,254,7]},\"granite\":{\"ids\":[\"rbxassetid://9920550720\",\"rbxassetid://9438453972\"],\"color\":[210,206,200,255]},\"grass\":{\"ids\":[\"rbxassetid://11152995545\",\"rbxassetid://9267183930\"],\"color\":[196,196,189,241]},\"ground\":{\"ids\":[\"rbxassetid://11546360009\",\"rbxassetid://11545533676\"],\"color\":[165,165,160,240]},\"ice\":{\"ids\":[\"rbxassetid://9920556429\",\"rbxassetid://9438453972\"],\"color\":[235,239,241,248]},\"leafygrass\":{\"ids\":[\"rbxassetid://11152995545\",\"rbxassetid://9267183930\"],\"color\":[182,178,175,234]},\"limestone\":{\"ids\":[\"rbxassetid://9920561624\",\"rbxassetid://9438453972\"],\"color\":[250,248,243,250]},\"marble\":{\"ids\":[\"rbxassetid://9873292869\",\"rbxassetid://9438453972\"],\"color\":[181,183,193,249]},\"metal\":{\"ids\":[\"rbxassetid://11546526557\",\"rbxassetid://11546431794\"],\"color\":[226,226,226,255]},\"mud\":{\"ids\":[\"rbxassetid://9920578676\",\"rbxassetid://9438453972\"],\"color\":[193,192,193,252]},\"pavement\":{\"ids\":[\"rbxassetid://11546539560\",\"rbxassetid://11546440685\"],\"color\":[218,218,219,236]},\"pebble\":{\"ids\":[\"rbxassetid://9920581197\",\"rbxassetid://9438453972\"],\"color\":[204,203,201,234]},\"plastic\":{\"ids\":[\"\",\"rbxassetid://9868015012\"],\"color\":[255,255,255,255]},\"rock\":{\"ids\":[\"rbxassetid://11546570730\",\"rbxassetid://11546456858\"],\"color\":[211,211,210,248]},\"corrodedmetal\":{\"ids\":[\"rbxassetid://11545623165\",\"rbxassetid://11545476330\"],\"color\":[206,177,163,180]},\"salt\":{\"ids\":[\"rbxassetid://9920590478\",\"rbxassetid://9438453972\"],\"color\":[249,249,249,255]},\"sand\":{\"ids\":[\"rbxassetid://11546588111\",\"rbxassetid://11546468464\"],\"color\":[218,216,210,240]},\"sandstone\":{\"ids\":[\"rbxassetid://9920596353\",\"rbxassetid://9438453972\"],\"color\":[241,234,230,246]},\"slate\":{\"ids\":[\"rbxassetid://9867974823\",\"rbxassetid://9844502433\"],\"color\":[235,234,235,254]},\"snow\":{\"ids\":[\"rbxassetid://11536062048\",\"rbxassetid://11108916253\"],\"color\":[239,240,240,255]},\"wood\":{\"ids\":[\"rbxassetid://9867974813\",\"rbxassetid://9844454989\"],\"color\":[217,209,208,255]},\"woodplanks\":{\"ids\":[\"rbxassetid://9867974813\",\"rbxassetid://9844454989\"],\"color\":[207,208,206,254]}}",
-    "FFlagMSRefactor5": "False"
-}
-```
-### Trollface Textures
-``` json
-{
-    "FStringPartTexturePackTable2022": "{\u0022foil\u0022:{\u0022ids\u0022:[\u0022rbxassetid://15482832278\u0022,\u0022rbxassetid://14983259444\u0022],\u0022color\u0022:[238,238,238,255]},\u0022asphalt\u0022:{\u0022ids\u0022:[\u0022rbxassetid://15482832278\u0022,\u0022rbxassetid://14983259444\u0022],\u0022color\u0022:[227,227,228,234]},\u0022basalt\u0022:{\u0022ids\u0022:[\u0022rbxassetid://15482832278\u0022,\u0022rbxassetid://14983259444\u0022],\u0022color\u0022:[160,160,158,238]},\u0022brick\u0022:{\u0022ids\u0022:[\u0022rbxassetid://15482832278\u0022,\u0022rbxassetid://14983259444\u0022],\u0022color\u0022:[229,214,205,227]},\u0022cobblestone\u0022:{\u0022ids\u0022:[\u0022rbxassetid://15482832278\u0022,\u0022rbxassetid://14983259444\u0022],\u0022color\u0022:[218,219,219,243]},\u0022concrete\u0022:{\u0022ids\u0022:[\u0022rbxassetid://15482832278\u0022,\u0022rbxassetid://14983259444\u0022],\u0022color\u0022:[225,225,224,255]},\u0022crackedlava\u0022:{\u0022ids\u0022:[\u0022rbxassetid://15482832278\u0022,\u0022rbxassetid://14983259444\u0022],\u0022color\u0022:[76,79,81,156]},\u0022diamondplate\u0022:{\u0022ids\u0022:[\u0022rbxassetid://15482832278\u0022,\u0022rbxassetid://14983259444\u0022],\u0022color\u0022:[210,210,210,255]},\u0022fabric\u0022:{\u0022ids\u0022:[\u0022rbxassetid://15482832278\u0022,\u0022rbxassetid://14983259444\u0022],\u0022color\u0022:[221,221,221,255]},\u0022glacier\u0022:{\u0022ids\u0022:[\u0022rbxassetid://15482832278\u0022,\u0022rbxassetid://14983259444\u0022],\u0022color\u0022:[225,229,229,243]},\u0022glass\u0022:{\u0022ids\u0022:[\u0022rbxassetid://9873284556\u0022,\u0022rbxassetid://9438453972\u0022],\u0022color\u0022:[254,254,254,7]},\u0022granite\u0022:{\u0022ids\u0022:[\u0022rbxassetid://15482832278\u0022,\u0022rbxassetid://14983259444\u0022],\u0022color\u0022:[210,206,200,255]},\u0022grass\u0022:{\u0022ids\u0022:[\u0022rbxassetid://15482832278\u0022,\u0022rbxassetid://14983259444\u0022],\u0022color\u0022:[196,196,189,241]},\u0022ground\u0022:{\u0022ids\u0022:[\u0022rbxassetid://15482832278\u0022,\u0022rbxassetid://14983259444\u0022],\u0022color\u0022:[165,165,160,240]},\u0022ice\u0022:{\u0022ids\u0022:[\u0022rbxassetid://15482832278\u0022,\u0022rbxassetid://14983259444\u0022],\u0022color\u0022:[235,239,241,248]},\u0022leafygrass\u0022:{\u0022ids\u0022:[\u0022rbxassetid://15482832278\u0022,\u0022rbxassetid://14983259444\u0022],\u0022color\u0022:[182,178,175,234]},\u0022limestone\u0022:{\u0022ids\u0022:[\u0022rbxassetid://15482832278\u0022,\u0022rbxassetid://14983259444\u0022],\u0022color\u0022:[250,248,243,250]},\u0022marble\u0022:{\u0022ids\u0022:[\u0022rbxassetid://15482832278\u0022,\u0022rbxassetid://14983259444\u0022],\u0022color\u0022:[181,183,193,249]},\u0022metal\u0022:{\u0022ids\u0022:[\u0022rbxassetid://15482832278\u0022,\u0022rbxassetid://14983259444\u0022],\u0022color\u0022:[226,226,226,255]},\u0022mud\u0022:{\u0022ids\u0022:[\u0022rbxassetid://15482832278\u0022,\u0022rbxassetid://14983259444\u0022],\u0022color\u0022:[193,192,193,252]},\u0022pavement\u0022:{\u0022ids\u0022:[\u0022rbxassetid://15482832278\u0022,\u0022rbxassetid://14983259444\u0022],\u0022color\u0022:[218,218,219,236]},\u0022pebble\u0022:{\u0022ids\u0022:[\u0022rbxassetid://15482832278\u0022,\u0022rbxassetid://14983259444\u0022],\u0022color\u0022:[204,203,201,234]},\u0022plastic\u0022:{\u0022ids\u0022:[\u0022\u0022,\u0022rbxassetid://9475422736\u0022],\u0022color\u0022:[255,255,255,255]},\u0022rock\u0022:{\u0022ids\u0022:[\u0022rbxassetid://15482832278\u0022,\u0022rbxassetid://14983259444\u0022],\u0022color\u0022:[211,211,210,248]},\u0022corrodedmetal\u0022:{\u0022ids\u0022:[\u0022rbxassetid://15482832278\u0022,\u0022rbxassetid://14983259444\u0022],\u0022color\u0022:[206,177,163,180]},\u0022salt\u0022:{\u0022ids\u0022:[\u0022rbxassetid://15482832278\u0022,\u0022rbxassetid://14983259444\u0022],\u0022color\u0022:[249,249,249,255]},\u0022sand\u0022:{\u0022ids\u0022:[\u0022rbxassetid://15482832278\u0022,\u0022rbxassetid://14983259444\u0022],\u0022color\u0022:[218,216,210,240]},\u0022sandstone\u0022:{\u0022ids\u0022:[\u0022rbxassetid://15482832278\u0022,\u0022rbxassetid://14983259444\u0022],\u0022color\u0022:[241,234,230,246]},\u0022slate\u0022:{\u0022ids\u0022:[\u0022rbxassetid://15482832278\u0022,\u0022rbxassetid://14983259444\u0022],\u0022color\u0022:[235,234,235,254]},\u0022snow\u0022:{\u0022ids\u0022:[\u0022rbxassetid://15482832278\u0022,\u0022rbxassetid://14983259444\u0022],\u0022color\u0022:[239,240,240,255]},\u0022wood\u0022:{\u0022ids\u0022:[\u0022rbxassetid://15482832278\u0022,\u0022rbxassetid://14983259444\u0022],\u0022color\u0022:[217,209,208,255]},\u0022woodplanks\u0022:{\u0022ids\u0022:[\u0022rbxassetid://15482832278\u0022,\u0022rbxassetid://14983259444\u0022],\u0022color\u0022:[207,208,206,254]}}",
-    "FStringPartTexturePackTablePre2022": "{\u0022foil\u0022:{\u0022ids\u0022:[\u0022rbxassetid://15482832278\u0022,\u0022rbxassetid://14983259444\u0022],\u0022color\u0022:[238,238,238,255]},\u0022asphalt\u0022:{\u0022ids\u0022:[\u0022rbxassetid://15482832278\u0022,\u0022rbxassetid://14983259444\u0022],\u0022color\u0022:[227,227,228,234]},\u0022basalt\u0022:{\u0022ids\u0022:[\u0022rbxassetid://15482832278\u0022,\u0022rbxassetid://14983259444\u0022],\u0022color\u0022:[160,160,158,238]},\u0022brick\u0022:{\u0022ids\u0022:[\u0022rbxassetid://15482832278\u0022,\u0022rbxassetid://14983259444\u0022],\u0022color\u0022:[229,214,205,227]},\u0022cobblestone\u0022:{\u0022ids\u0022:[\u0022rbxassetid://15482832278\u0022,\u0022rbxassetid://14983259444\u0022],\u0022color\u0022:[218,219,219,243]},\u0022concrete\u0022:{\u0022ids\u0022:[\u0022rbxassetid://15482832278\u0022,\u0022rbxassetid://14983259444\u0022],\u0022color\u0022:[225,225,224,255]},\u0022crackedlava\u0022:{\u0022ids\u0022:[\u0022rbxassetid://15482832278\u0022,\u0022rbxassetid://14983259444\u0022],\u0022color\u0022:[76,79,81,156]},\u0022diamondplate\u0022:{\u0022ids\u0022:[\u0022rbxassetid://15482832278\u0022,\u0022rbxassetid://14983259444\u0022],\u0022color\u0022:[210,210,210,255]},\u0022fabric\u0022:{\u0022ids\u0022:[\u0022rbxassetid://15482832278\u0022,\u0022rbxassetid://14983259444\u0022],\u0022color\u0022:[221,221,221,255]},\u0022glacier\u0022:{\u0022ids\u0022:[\u0022rbxassetid://15482832278\u0022,\u0022rbxassetid://14983259444\u0022],\u0022color\u0022:[225,229,229,243]},\u0022glass\u0022:{\u0022ids\u0022:[\u0022rbxassetid://9873284556\u0022,\u0022rbxassetid://9438453972\u0022],\u0022color\u0022:[254,254,254,7]},\u0022granite\u0022:{\u0022ids\u0022:[\u0022rbxassetid://15482832278\u0022,\u0022rbxassetid://14983259444\u0022],\u0022color\u0022:[210,206,200,255]},\u0022grass\u0022:{\u0022ids\u0022:[\u0022rbxassetid://15482832278\u0022,\u0022rbxassetid://14983259444\u0022],\u0022color\u0022:[196,196,189,241]},\u0022ground\u0022:{\u0022ids\u0022:[\u0022rbxassetid://15482832278\u0022,\u0022rbxassetid://14983259444\u0022],\u0022color\u0022:[165,165,160,240]},\u0022ice\u0022:{\u0022ids\u0022:[\u0022rbxassetid://15482832278\u0022,\u0022rbxassetid://14983259444\u0022],\u0022color\u0022:[235,239,241,248]},\u0022leafygrass\u0022:{\u0022ids\u0022:[\u0022rbxassetid://15482832278\u0022,\u0022rbxassetid://14983259444\u0022],\u0022color\u0022:[182,178,175,234]},\u0022limestone\u0022:{\u0022ids\u0022:[\u0022rbxassetid://15482832278\u0022,\u0022rbxassetid://14983259444\u0022],\u0022color\u0022:[250,248,243,250]},\u0022marble\u0022:{\u0022ids\u0022:[\u0022rbxassetid://15482832278\u0022,\u0022rbxassetid://14983259444\u0022],\u0022color\u0022:[181,183,193,249]},\u0022metal\u0022:{\u0022ids\u0022:[\u0022rbxassetid://15482832278\u0022,\u0022rbxassetid://14983259444\u0022],\u0022color\u0022:[226,226,226,255]},\u0022mud\u0022:{\u0022ids\u0022:[\u0022rbxassetid://15482832278\u0022,\u0022rbxassetid://14983259444\u0022],\u0022color\u0022:[193,192,193,252]},\u0022pavement\u0022:{\u0022ids\u0022:[\u0022rbxassetid://15482832278\u0022,\u0022rbxassetid://14983259444\u0022],\u0022color\u0022:[218,218,219,236]},\u0022pebble\u0022:{\u0022ids\u0022:[\u0022rbxassetid://15482832278\u0022,\u0022rbxassetid://14983259444\u0022],\u0022color\u0022:[204,203,201,234]},\u0022plastic\u0022:{\u0022ids\u0022:[\u0022\u0022,\u0022rbxassetid://9475422736\u0022],\u0022color\u0022:[255,255,255,255]},\u0022rock\u0022:{\u0022ids\u0022:[\u0022rbxassetid://15482832278\u0022,\u0022rbxassetid://14983259444\u0022],\u0022color\u0022:[211,211,210,248]},\u0022corrodedmetal\u0022:{\u0022ids\u0022:[\u0022rbxassetid://15482832278\u0022,\u0022rbxassetid://14983259444\u0022],\u0022color\u0022:[206,177,163,180]},\u0022salt\u0022:{\u0022ids\u0022:[\u0022rbxassetid://15482832278\u0022,\u0022rbxassetid://14983259444\u0022],\u0022color\u0022:[249,249,249,255]},\u0022sand\u0022:{\u0022ids\u0022:[\u0022rbxassetid://15482832278\u0022,\u0022rbxassetid://14983259444\u0022],\u0022color\u0022:[218,216,210,240]},\u0022sandstone\u0022:{\u0022ids\u0022:[\u0022rbxassetid://15482832278\u0022,\u0022rbxassetid://14983259444\u0022],\u0022color\u0022:[241,234,230,246]},\u0022slate\u0022:{\u0022ids\u0022:[\u0022rbxassetid://15482832278\u0022,\u0022rbxassetid://14983259444\u0022],\u0022color\u0022:[235,234,235,254]},\u0022snow\u0022:{\u0022ids\u0022:[\u0022rbxassetid://15482832278\u0022,\u0022rbxassetid://14983259444\u0022],\u0022color\u0022:[239,240,240,255]},\u0022wood\u0022:{\u0022ids\u0022:[\u0022rbxassetid://15482832278\u0022,\u0022rbxassetid://14983259444\u0022],\u0022color\u0022:[217,209,208,255]},\u0022woodplanks\u0022:{\u0022ids\u0022:[\u0022rbxassetid://15482832278\u0022,\u0022rbxassetid://14983259444\u0022],\u0022color\u0022:[207,208,206,254]}}",
-    "FFlagMSRefactor5": "False"
-}
-```
-### dark map/textures
-``` json
-{
-"DFIntTaskSchedulerTargetFps": 5588562,
-"FFlagDebugSkyGray": true,
-"FFlagMSRefactor5": false,
-"FStringPartTexturePackTablePre2022": "{\"foil\":{\"ids\":[\"rbxassetid://13576561565\",\"rbxassetid://13576561565\"],\"color\":[0,0,0]},\"asphalt\":{\"ids\":[\"rbxassetid://13576561565\",\"rbxassetid://13576561565\"],\"color\":[0,0,0]},\"basalt\":{\"ids\":[\"rbxassetid://13576561565\",\"rbxassetid://13576561565\"],\"color\":[0,0,0]},\"brick\":{\"ids\":[\"rbxassetid://13576561565\",\"rbxassetid://9438453972\"],\"color\":[0,0,0]},\"cobblestone\":{\"ids\":[\"rbxassetid://13576561565\",\"rbxassetid://9438453972\"],\"color\":[0,0,0]},\"concrete\":{\"ids\":[\"rbxassetid://13576561565\",\"rbxassetid://9438453972\"],\"color\":[0,0,0]},\"crackedlava\":{\"ids\":[\"rbxassetid://13576561565\",\"rbxassetid://9438453972\"],\"color\":[0,0,0]},\"diamondplate\":{\"ids\":[\"rbxassetid://13576561565\",\"rbxassetid://9438453972\"],\"color\":[0,0,0]},\"fabric\":{\"ids\":[\"rbxassetid://13576561565\",\"rbxassetid://9438453972\"],\"color\":[0,0,0]},\"glacier\":{\"ids\":[\"rbxassetid://13576561565\",\"rbxassetid://9438453972\"],\"color\":[0,0,0]},\"glass\":{\"ids\":[\"rbxassetid://13576561565\",\"rbxassetid://9438453972\"],\"color\":[0,0,0]},\"granite\":{\"ids\":[\"rbxassetid://13576561565\",\"rbxassetid://9438453972\"],\"color\":[0,0,0]},\"grass\":{\"ids\":[\"rbxassetid://13576561565\",\"rbxassetid://9438453972\"],\"color\":[0,0,0]},\"ground\":{\"ids\":[\"rbxassetid://13576561565\",\"rbxassetid://9438453972\"],\"color\":[0,0,0]},\"ice\":{\"ids\":[\"rbxassetid://13576561565\",\"rbxassetid://9438453972\"],\"color\":[0,0,0]},\"leafygrass\":{\"ids\":[\"rbxassetid://13576561565\",\"rbxassetid://9438453972\"],\"color\":[0,0,0]},\"limestone\":{\"ids\":[\"rbxassetid://13576561565\",\"rbxassetid://9438453972\"],\"color\":[0,0,0]},\"marble\":{\"ids\":[\"rbxassetid://13576561565\",\"rbxassetid://9438453972\"],\"color\":[0,0,0]},\"metal\":{\"ids\":[\"rbxassetid://13576561565\",\"rbxassetid://9438453972\"],\"color\":[0,0,0]},\"mud\":{\"ids\":[\"rbxassetid://13576561565\",\"rbxassetid://9438453972\"],\"color\":[0,0,0]},\"pavement\":{\"ids\":[\"rbxassetid://13576561565\",\"rbxassetid://9438453972\"],\"color\":[0,0,0]},\"pebble\":{\"ids\":[\"rbxassetid://13576561565\",\"rbxassetid://9438453972\"],\"color\":[0,0,0]},\"plastic\":{\"ids\":[\"\",\"rbxassetid://13576561565\"],\"color\":[0,0,0]},\"rock\":{\"ids\":[\"rbxassetid://13576561565\",\"rbxassetid://9438453972\"],\"color\":[0,0,0]},\"corrodedmetal\":{\"ids\":[\"rbxassetid://13576561565\",\"rbxassetid://9439557520\"],\"color\":[0,0,0]},\"salt\":{\"ids\":[\"rbxassetid://13576561565\",\"rbxassetid://9438453972\"],\"color\":[0,0,0]},\"sand\":{\"ids\":[\"rbxassetid://13576561565\",\"rbxassetid://9438453972\"],\"color\":[0,0,0]},\"sandstone\":{\"ids\":[\"rbxassetid://13576561565\",\"rbxassetid://9438453972\"],\"color\":[0,0,0]},\"slate\":{\"ids\":[\"rbxassetid://13576561565\",\"rbxassetid://9439613006\"],\"color\":[0,0,0]},\"snow\":{\"ids\":[\"rbxassetid://13576561565\",\"rbxassetid://9438453972\"],\"color\":[0,0,0]},\"wood\":{\"ids\":[\"rbxassetid://13576561565\",\"rbxassetid://9439649548\"],\"color\":[0,0,0]},\"woodplanks\":{\"ids\":[\"rbxassetid://13576561565\",\"rbxassetid://9438453972\"],\"color\":[0,0,0]}}"
-}
-```
-# Visuals ig
+## untest_shader
 ### semi fullbright
 ``` json
 {
@@ -1240,29 +557,7 @@ Fast Flags:
     "FFlagDisablePostFx": "True"
 }
 ```
-### Change the Layered Clothing deform Limit
-###### The changes are only clientsided. When you set it to the (positive) signed 32 bit integer Limit (2147483647), then you can create really large Clothing combinations.  All deformations are disabled when put to a low value. The check dimension flag and check max cage dist are needed for this to work.
-```Json
-{
-  "DFFlagCheckMaxCageDistance":"False",
-  "FFlagLCCheckCageDimensions":"False",
-  "DFIntLCCageDeformLimit":"2147483647"
-}
-```
-### unifed lighing
-``` json
-{
-    "FFlagRenderUnifiedLighting16": "True",
-    "FFlagUnifiedLightingBetaFeature": "True"
-}
-```
-### Capture posts
-###### twitter but roblox edition
-```
-{
-    "FFlagCapturesPostEnabledForAll_v4": "true"
-}
-```
+## Visuals ig
 ### white everything
 ###### by [new guy](https://github.com/Storm99999)
 ``` json
@@ -1290,15 +585,6 @@ Fast Flags:
     "FIntCameraFarZPlane": 600
 }
 ```
-### dark sky v2
-###### Use Vulkan rendering to have the smooth color no texture effect.
-``` json
-{
-"FIntDebugTextureManagerSkipMips": "8",
-"DFIntTextureQualityOverride": "0",
-"FIntVertexSmoothingGroupTolerance": "10000"
-}
-```
 ### colorful sky
 ``` json
 {
@@ -1312,151 +598,11 @@ Fast Flags:
     "FIntDebugForceMSAASamples": "0"
 }
 ```
-### black wall
-##### buggy.
-###### i def dont have to put credits
-``` json
-{
-    "FIntCameraFarZPlane": "60",
-}
-```
-### Speed up particle emitters
-``` json
-{
-  "FFlagDebugDeterministicParticles":"True"
-}
-```
-### Crash all CoreGui scripts
-###### Won't let the game load your core gui. Resets the seasonal quests in Blade Ball
-```Json
-{
-  "FFlagFFlagLogAllGuacRead":"True"
-}
-```
-### speed up anims
-```json
-{
-  "DFIntAnimatorThrottleMaxFramesToSkip": 0,
-  "DFIntMaxActiveAnimationTracks": 2147483647,
-  "FIntAnimationParallelThreadMax": 2147483647
-}
-```
-### rate limit on anims disabler
-```json
-{
-    "DFIntAnimationRateLimiterAssertAmount": "0",
-    "DFIntAnimationRateLimiterMaxAmount": "2147483647",
-    "DFIntAnimationRateLimiterSeconds": "0"
-}
-```
-
-Should theoretically reduce animation latency. 
-
-I have not tested this yet, so beware of any issues.
-### Configure How Many Physics Simulation Tasks Can Run In Parallel
-##### *FIntSimWorldTaskQueueParallelTasks*
-
-`FIntSimWorldTaskQueueParallelTasks` controls how many physics simulation tasks can run in parallel to improve rendering.  
-Higher values make physics update quicker but reduce FPS due to extra overhead, while lower values ease performance load but slow down physics responsiveness *slightly* (similar to CoordinatorMemory).
-
-- Higher = faster physics, worse FPS  
-- Lower = smoother FPS, *slightly* delayed physics
-
-```{
-"FIntSimWorldTaskQueueParallelTasks": "1"
-}
-```
-
-### Simple coregui settings
-```json
-{
-    "FFlagRefactorInExpGameSettings2": "True"
-}
-```
-### disable postfx
-``` json
-{
-    "FFlagDisablePostFx": "True"
-}
-```
-### Low Quallity Terrain Textures
-###### 4 for less quality 16, 32, 64 for higher quality
-```json
-{
-    "FIntTerrainArraySliceSize": "4"
-}
-```
-### High Quality Textures 
-###### *[1-3]*
-```json
-{
-    "DFFlagTextureQualityOverrideEnabled": "True",
-    "DFIntTextureQualityOverride": "3"
-}
-```
-### Lower Quality Textures 
-###### *[1-3]*
-```json
-{
-    "DFIntPerformanceControlTextureQualityBestUtility": "-1"
-}
-```
-### Dev Console Logging
-###### Changes how long a Message can be, doesn't give you the ability to exceed the 16k Message Length Limit
-```Json
-{
-  "FIntStandardOutputMaximumCharacterLength":"1"
-}
-```
-### No more highlights
-###### Stops all highlights from rendering.
-```Json
-{
-  "DFFlagRenderHighlightManagerPrepare":"True"
-}
-```
-### fully dark map
-``` json
-{
-  "DFIntDebugFRMQualityLevelOverride": "1"
-  "DFIntRenderClampRoughnessMax": "-640000000",
-  "DFIntRenderClampRoughnessMin": "-640000000"
-}
-```
-### No avatar textures
-```json
-{
-    "DFIntTextureCompositorActiveJobs": "0"
-}
-```
-### Texture Manager
-
-###### 1-4 Blurry, 5-7 low quality also removes studs, 8 Removes almost everything, use 8 for "no textures" in any game
-###### [rivals video](https://www.youtube.com/watch?v=nv4jD1sdmWE)
-```json
-{
-    "FIntDebugTextureManagerSkipMips": "-1"
-}
-```
-### fix
+### texture skipmips
 ```json
 {
     "FFlagRenderUseTextureManager224": "false",
     "FIntDebugTextureManagerSkipMips": "8"
-}
-```
-### remove sky/clouds
-``` json
-{
-    "FFlagRenderNoLowFrmBloom": "false",
-    "FFlagFRMRefactor": "false"
-}
-```
-### remove bloom
-``` json
-{
-  "FIntBloomFrmCutoff":"1654515",
-  "FFlagRenderNoLowFrmBloom":"True"
 }
 ```
 ### quality level override
@@ -1484,13 +630,6 @@ High
 9 = 18
 10 = 21
 ```
-### failsafehumanoid
-###### grey avatars
-``` json
-{
-    "FFlagFailsafeHumanoid_3": "True"
-}
-```
 ### HyperThreading
 ``` json
 {
@@ -1501,108 +640,13 @@ High
 ### Makes stuff slightly brighter
 ``` json
 {
-    "FFlagRenderFixFog": "True"
-}
-```
-### Lighting Attenuation
-``` json
-{
-    "FFlagNewLightAttenuation": "True"
-}
-```
-### Xray
-###### MAY MAKE FLOOR INVISIBLE SOMETIMES
-###### by me
-
-``` json
-{
-  "DFIntCullFactorPixelThresholdMainViewHighQuality": "1250",
-  "DFIntCullFactorPixelThresholdMainViewLowQuality": "1250",
-  "DFIntCullFactorPixelThresholdShadowMapHighQuality": "1250",
-  "DFIntCullFactorPixelThresholdShadowMapLowQuality": "1250",
-  "DFIntDebugFRMQualityLevelOverride": "2"
-}
-```
-### Stuttery Animation Fix
-``` json
-
-    {
-        "DFIntTimestepArbiterThresholdCFLThou": "300"
-    }
-```
-### darker dark mode?
-``` json
-{
-    "FFlagLuaAppUseUIBloxColorPalettes1": "True",
-    "FFlagUIBloxUseNewThemeColorPalettes": "True"
-}
-```
-### Max Raycast Distance
-###### Raycasting is the use of intersection tests to solve problems in ROBLOX. The most common use of raycasting is to determine the first object intersected by a ray. This is done by casting a virtual ray from a certain point in a direction and determining the first surface it intersected with.
-###### Break legs collision from 2 to -inf, kinda break camera on values over 3 noclip cam on 3
-```json
-{
-    "DFIntRaycastMaxDistance": "3"
+    "FFlagRenderFixFogSkyboxOrientation": "True"
 }
 ```
 ### Applies cool colors to stuff
 ``` json
 {
 "FFlagDebugDisplayUnthemedInstances": "True"
-}
-```
-### Rename "Charts" back to "Discovery"
-``` json
-{
-    "FFlagLuaAppChartsPageRenameIXP": false
-}
-```
-### Disable Ads
-``` json
-{
-    "FFlagAdServiceEnabled": false
-}
-```
-### Stuttery Animation Fix
-``` json
-{
-    "DFIntTimestepArbiterThresholdCFLThou": "300"
-}
-```
-### lower render distance
-###### Only works on games which turned StreamingEnabled on.
-``` json
-{
-    "DFIntDebugRestrictGCDistance": "1"
-}
-```
-### no grass :D
-###### best for gamers
-``` json
-{
-    "FIntFRMMinGrassDistance": "0",
-    "FIntFRMMaxGrassDistance": "0",
-    "FIntRenderGrassDetailStrands": "0"
-}
-```
-
-### Increased Grass Motion & No Grass Motion
-###### best for non gamers to touch grass
-```json
-{
-    "FIntGrassMovementReducedMotionFactor": 999
-}
-```
-```json
-{
-    "FIntGrassMovementReducedMotionFactor": 0
-}
-```
-### Remove head roll limit for face tracking
-###### server sided???
-``` json
-{
-    "DFIntAvatarFaceChatHeadRollLimitDegrees": "360"
 }
 ```
 ### Enable GPULightCulling
@@ -1620,7 +664,7 @@ High
 ```
 ### Esp..?
 ###### adds red circle under avatar and a grey thing above
-
+###### https://github.com/NoobLikesThis/using-older-fflags
 ``` json
 {
     "FFlagDebugAvatarChatVisualization": "True",
@@ -1629,33 +673,7 @@ High
     "FFlagEnableInGameMenuSongbirdABTest": "False"
 }
 ```
-### Skeleton esp
-###### mess around with values
-``` json
-{
-"DFFlagDebugDrawEnable": "True",
-"DFFlagAnimatorDrawSkeletonAll": "True",
-"DFIntAnimatorDrawSkeletonScalePercent": 1,
-"DFFlagAnimatorDrawSkeletonAttachments": "False",
-"DFFlagAnimatorDrawSkeletonText": "False"
-}
-```
-### roblox fps unlocker
-``` json
-{
-    "FFlagGameBasicSettingsFramerateCap5": "True",
-    "FFlagTaskSchedulerLimitTargetFpsTo2402": "False",
-    "DFIntTaskSchedulerTargetFps": "0"
-}
-```
-### unlimited fps
-``` json
-{
-    "FFlagTaskSchedulerLimitTargetFpsTo2402": "False",
-    "DFIntTaskSchedulerTargetFps": "1000000000"
-}
-```
-### Humanoid Outline
+### humanoid Outline
 > [!NOTE]
 > **Draws an outline around every part and every humanoid**
 ```json
@@ -1671,35 +689,10 @@ High
     "DFFlagDebugDrawBvhNodes": "True"
 }
 ```
-### blue theme
-###### patched?
-``` json
-{
-    "FFlagLuaAppEnableFoundationColors7": "True"
-}
-```
-### Disable Blue theme
-```json
-{
-    "FFlagLuaAppFoundationColorsABTest": "False"
-}
-```
-### Enable New Settings Layout
-```
-{
-    "FFlagOverrideInExperienceMenuReorderVariant1": "True"
-}
-```
 ### make low quality roblox memes
 ``` json
 {
   "DFIntDebugDynamicRenderKiloPixels":"2"
-}
-```
-### Buggy ZPlane Camera
-```json
-{
-    "FIntCameraFarZPlane": "1"
 }
 ```
 ### Adds an UI in game, which highlights any part player touches (like ground, Meshes etc.). It's a non-functioning UI too. Also adds a blue circle to your humanoid.
@@ -1708,52 +701,18 @@ High
     "FFlagDebugHumanoidRendering": "True"
 }
 ```
-### Crash Roblox 1
-```json
-{
-    "DFIntTimestepArbiterThresholdCFLThou": "0"
-}
-```
-### Crash Roblox 2
-```json
-{
-    "DFFlagVideoCaptureServiceEnabled": "False"
-}
-```
-### Crash roblox 3 
+### Crash roblox 1 
 ##### when you try to launch roblox it won't open
 ```json
 {
     "DFFlagDebugSimulateHangAtStartup": "True"
 }
 ```
-### Crash roblox 4
+### Crash roblox 2
 ##### the same thing from above but it only crashes when you try to close roblox
 ```json
 {
     "DFFlagDebugSimulateHangAtShutdown": "True"
-}
-```
-## crash roblox
-###### The Value must be 26778 for games to load.
-```Json
-{
-  "DFIntWriterInputCheckLength":"1"
-}
-```
-### custom accessory positions
-###### found by maxiumadhd, almost lost ages ago, only for people who can't use.
-``` json
-{
-"FFlagAXAccessoryAdjustmentlXPEnabledForAll": "True",
-"DFFlagUseVisBugChecks": "True",
-"DFFlagUseVisBugChecks27": "True",
-}
-```
-### Increase Ping 
-```json
-{
-    "DFIntDataSenderMaxBandwidthBps": "150"
 }
 ```
 ### Shows the state of a flag
@@ -1788,22 +747,6 @@ High
     "DFIntRemoteEventSingleInvocationSizeLimit": "1"
 }
 ```
-### Lag remote events periodically
-###### Does what it says, 0 and 2147483647 don't let you load games.
-```Json
-{
-  "FIntRakNetResendBufferArrayLength":"1"
-}
-```
-### log local player deaths/how you die and joins
-###### only works with the new chat it goes in dev console so idk man
-###### @return_request
-```json
-{
-    "FStringDebugLuaLogLevel": "debug",
-    "FStringDebugLuaLogPattern": "ExpChat/mountClientApp"
-}
-```
 ### log player joins,leaves,messages
 ###### only works with the new chat
 ###### @return_request
@@ -1821,24 +764,11 @@ High
     "FIntNewDevConsoleMaxLogCount": "2147483647"
 }
 ```
-### Dev Console Logging
-Changes how long a Message can be, doesn't give you the ability to exceed the 16k Message Length Limit
-```Json
-{
-  "FIntStandardOutputMaximumCharacterLength":"1"
-}
-```
 ### Replace all Decals with a Test Image
 ###### @.rbx.bloxy
 ```json
 {
     "FFlagDebugTestImageDrawItem": "True"
-}
-```
-### Octree Validation
-```json
-{
-    "FFlagDebugEnableOctreeValidation": "True"
 }
 ```
 ### Self Explanatory 1
@@ -1860,20 +790,6 @@ Changes how long a Message can be, doesn't give you the ability to exceed the 16
 }
 ```
 ### Self Explanatory 3
-```json
-{
-    "FFlagTrackerLodControllerDebugUI": "True"
-}
-```
-### Self Explanatory 4
-> [!NOTE]
-> **Disable Drag Detectors**
-```json
-{
-    "FFlagDragDetectors1": "False"
-}
-```
-### Self Explanatory 5
 > [!NOTE]
 > **Disable CTM Climbing**
 ```json
@@ -1881,23 +797,7 @@ Changes how long a Message can be, doesn't give you the ability to exceed the 16
     "FFlagUserClickToMoveSupportAgentCanClimb2": "False"
 }
 ```
-### Self Explanatory 6
-> [!NOTE]
-> **Disable Feedback Button in ESC**
-```json
-{
-    "FFlagDisableFeedbackSoothsayerCheck": "False"
-}
-```
-### Self Explanatory 7
-###### @thefrenchguy4
-``` json
-{
-    "FFlagRenamePassesAndGearToSubscriptionsAndPasses": "False"
-}
-```
-
-### Self Explanatory 8
+### Self Explanatory 4
 ###### LDL dev console printing
 ###### @tyetonix
 ```json
@@ -1906,7 +806,7 @@ Changes how long a Message can be, doesn't give you the ability to exceed the 16
     "DFFlagDebugSimLDLProgramPrintExecStats": "True"
 }
 ```
-### Self Explanatory 9
+### Self Explanatory 5
 ###### prints body allocations counts in dev console
 ###### @tyetonix
 ```json
@@ -1915,180 +815,7 @@ Changes how long a Message can be, doesn't give you the ability to exceed the 16
 }
 ```
 ### Abusive Game Specific Presets
-###### this is stolen from luafv
-
-#### You can contribute by making an issue.
-
-## Fling Things and People
-
-### Send people to hell 😈😈
-
-``` json
-{
-    "DFIntSimAdaptiveHumanoidPDControllerSubstepMultiplier": "-999999",
-    "DFFlagSimHumanoidTimestepModelUpdate": "True",
-    "FFlagDebugSimDefaultPrimalSolver": "True",
-    "FFlagSimAdaptiveTimesteppingDefault2": "True",
-    "DFIntDebugSimPrimalWarmstartVelocity": "-10",
-    "DFIntDebugSimPrimalWarmstartForce": "1750",
-    "DFIntDebugSimPrimalPreconditioner": "-20",
-    "DFIntDebugSimPrimalPreconditionerMinExp": "1000",
-    "DFIntDebugSimPrimalNewtonIts": "2",
-    "DFIntDebugSimPrimalToleranceInv": "2"
-}
-```
-### Bury people alive
-##### everything that you grab will fall through the ground
-```json
-{
-    "FFlagDebugSimDefaultPrimalSolver": "True",
-    "DFIntDebugSimPrimalStiffness": "0"
-}
-```
-### Send people to hell V2
-
-> \[!TIP\] Modify warmstart to change speed
-
-``` json
-{
-    "DFIntDebugSimPrimalNewtonIts": "2",
-    "DFIntDebugSimPrimalPreconditioner": "1100",
-    "DFIntDebugSimPrimalPreconditionerMinExp": "1000",
-    "DFIntDebugSimPrimalToleranceInv": "1",
-    "DFIntDebugSimPrimalWarmstartForce": "-800",
-    "DFIntDebugSimPrimalWarmstartVelocity": "102",
-    "FFlagDebugSimDefaultPrimalSolver": "True",
-    "FIntDebugSimPrimalGSLumpAlpha": "-2147483647"
-}
-```
-
-### Send people to heaven
-
-``` json
-{
-    "DFIntDebugSimPrimalNewtonIts": "1",
-    "DFIntDebugSimPrimalPreconditioner": "15",
-    "DFIntDebugSimPrimalPreconditionerMinExp": "10",
-    "DFIntDebugSimPrimalToleranceInv": "1",
-    "DFIntDebugSimPrimalWarmstartForce": "-150",
-    "DFIntDebugSimPrimalWarmstartVelocity": "100",
-    "FFlagDebugSimDefaultPrimalSolver": "True",
-}
-```
-## slap battles and ability wars
-
-## Good Anti KB
-This combination works with every game that uses Ragdolls (the Anti KB is always active). You can change the NewtonIts Flag to stop being stuck on walls or objects (anything below 0 Crashes your game)
-
-```Json
-{
-  "DFIntDebugSimPrimalPreconditionerMinExp": "1",
-  "DFIntDebugSimPrimalNewtonIts": "2",
-  "DFIntDebugSimPrimalWarmstartForce": "0",
-  "FFlagDebugSimDefaultPrimalSolver": "True",
-  "DFIntDebugSimPrimalWarmstartVelocity": "0",
-  "DFIntDebugSimPrimalToleranceInv": "1",
-  "DFIntDebugSimPrimalPreconditioner": "1"
-}
-```
-## Anti Kb 
-##### use for anti fall, buggy.
-##### This automatically teleports all ragdolled players limbs (except torso) to the games 0,0,0 (very unreliable, only drags your torso to the 0,0,0)
-##### Default: Unknown
-
-```Json
-{
-  "DFIntGameNetLocalSpaceMaxSendIndex": "100000"
-}
-```
-## doors
-### dark map 
-###### only works in non lighted rooms + use voxel + use FFlagRenderFixFog if yk if it works
-``` json
-{
-    "FFlagFastGPULightCulling3": "True",
-    "FIntRenderShadowIntensity": "0",
-    "DFIntCullFactorPixelThresholdShadowMapHighQuality": "2147483647",
-    "DFIntCullFactorPixelThresholdShadowMapLowQuality": "2147483647",
-    "FFlagNewLightAttenuation": "True",
-    "FIntRenderShadowmapBias": "-1",
-    "DFFlagDebugPauseVoxelizer": "True",
-    "DFIntTaskSchedulerTargetFps": "5588562",
-    "FFlagDebugSkyGray": "true",
-    "DFIntDebugFRMQualityLevelOverride": "2",
-    "FIntRenderShadowIntensity": "0",
-    "FFlagMSRefactor5": false,
-    "FStringPartTexturePackTablePre2022": "{\"foil\":{\"ids\":[\"rbxassetid://13576561565\",\"rbxassetid://13576561565\"],\"color\":[0,0,0]},\"asphalt\":{\"ids\":[\"rbxassetid://13576561565\",\"rbxassetid://13576561565\"],\"color\":[0,0,0]},\"basalt\":{\"ids\":[\"rbxassetid://13576561565\",\"rbxassetid://13576561565\"],\"color\":[0,0,0]},\"brick\":{\"ids\":[\"rbxassetid://13576561565\",\"rbxassetid://9438453972\"],\"color\":[0,0,0]},\"cobblestone\":{\"ids\":[\"rbxassetid://13576561565\",\"rbxassetid://9438453972\"],\"color\":[0,0,0]},\"concrete\":{\"ids\":[\"rbxassetid://13576561565\",\"rbxassetid://9438453972\"],\"color\":[0,0,0]},\"crackedlava\":{\"ids\":[\"rbxassetid://13576561565\",\"rbxassetid://9438453972\"],\"color\":[0,0,0]},\"diamondplate\":{\"ids\":[\"rbxassetid://13576561565\",\"rbxassetid://9438453972\"],\"color\":[0,0,0]},\"fabric\":{\"ids\":[\"rbxassetid://13576561565\",\"rbxassetid://9438453972\"],\"color\":[0,0,0]},\"glacier\":{\"ids\":[\"rbxassetid://13576561565\",\"rbxassetid://9438453972\"],\"color\":[0,0,0]},\"glass\":{\"ids\":[\"rbxassetid://13576561565\",\"rbxassetid://9438453972\"],\"color\":[0,0,0]},\"granite\":{\"ids\":[\"rbxassetid://13576561565\",\"rbxassetid://9438453972\"],\"color\":[0,0,0]},\"grass\":{\"ids\":[\"rbxassetid://13576561565\",\"rbxassetid://9438453972\"],\"color\":[0,0,0]},\"ground\":{\"ids\":[\"rbxassetid://13576561565\",\"rbxassetid://9438453972\"],\"color\":[0,0,0]},\"ice\":{\"ids\":[\"rbxassetid://13576561565\",\"rbxassetid://9438453972\"],\"color\":[0,0,0]},\"leafygrass\":{\"ids\":[\"rbxassetid://13576561565\",\"rbxassetid://9438453972\"],\"color\":[0,0,0]},\"limestone\":{\"ids\":[\"rbxassetid://13576561565\",\"rbxassetid://9438453972\"],\"color\":[0,0,0]},\"marble\":{\"ids\":[\"rbxassetid://13576561565\",\"rbxassetid://9438453972\"],\"color\":[0,0,0]},\"metal\":{\"ids\":[\"rbxassetid://13576561565\",\"rbxassetid://9438453972\"],\"color\":[0,0,0]},\"mud\":{\"ids\":[\"rbxassetid://13576561565\",\"rbxassetid://9438453972\"],\"color\":[0,0,0]},\"pavement\":{\"ids\":[\"rbxassetid://13576561565\",\"rbxassetid://9438453972\"],\"color\":[0,0,0]},\"pebble\":{\"ids\":[\"rbxassetid://13576561565\",\"rbxassetid://9438453972\"],\"color\":[0,0,0]},\"plastic\":{\"ids\":[\"\",\"rbxassetid://13576561565\"],\"color\":[0,0,0]},\"rock\":{\"ids\":[\"rbxassetid://13576561565\",\"rbxassetid://9438453972\"],\"color\":[0,0,0]},\"corrodedmetal\":{\"ids\":[\"rbxassetid://13576561565\",\"rbxassetid://9439557520\"],\"color\":[0,0,0]},\"salt\":{\"ids\":[\"rbxassetid://13576561565\",\"rbxassetid://9438453972\"],\"color\":[0,0,0]},\"sand\":{\"ids\":[\"rbxassetid://13576561565\",\"rbxassetid://9438453972\"],\"color\":[0,0,0]},\"sandstone\":{\"ids\":[\"rbxassetid://13576561565\",\"rbxassetid://9438453972\"],\"color\":[0,0,0]},\"slate\":{\"ids\":[\"rbxassetid://13576561565\",\"rbxassetid://9439613006\"],\"color\":[0,0,0]},\"snow\":{\"ids\":[\"rbxassetid://13576561565\",\"rbxassetid://9438453972\"],\"color\":[0,0,0]},\"wood\":{\"ids\":[\"rbxassetid://13576561565\",\"rbxassetid://9439649548\"],\"color\":[0,0,0]},\"woodplanks\":{\"ids\":[\"rbxassetid://13576561565\",\"rbxassetid://9438453972\"],\"color\":[0,0,0]}}"
-
-}
-```
-
-
-###### We are accepting performance Fast Flags that aren't listed or known.
-
-### absolutely kill your game quality with fflags known to me
-##### @dynamitebumblemouth
-```json
-{
-    "FFlagDisablePostFx": "True",
-    "FIntDebugTextureManagerSkipMips": "-1",
-    "DFIntTextureCompositorActiveJobs": "0",
-    "DFIntCSGLevelOfDetailSwitchingDistance": "0",
-    "DFIntCSGLevelOfDetailSwitchingDistanceL12": "0",
-    "DFIntCSGLevelOfDetailSwitchingDistanceL23": "0",
-    "DFIntCSGLevelOfDetailSwitchingDistanceL34": "0",
-    "DFIntDebugFRMQualityLevelOverride": "1",
-    "DFFlagDebugPauseVoxelizer": "True",
-    "DFFlagDebugRenderForceTechnologyVoxel": "True",
-    "FFlagGlobalWindRendering": "False",
-    "FIntRenderShadowIntensity": "0",
-    "FIntRenderShadowmapBias": "1",
-    "FIntDebugForceMSAASamples": "-1",
-    "FIntFRMMinGrassDistance": "0",
-    "DFIntTextureQualityOverride": "1"
-}
-```
-### Absoulutely kills your game graphics
-###### may be someone elses, or an older one.
-``` json
-{
-    "FFlagDisablePostFx": "True",
-    "FIntDebugTextureManagerSkipMips": "-1",
-    "DFIntTextureCompositorActiveJobs": "0",
-    "DFIntCSGLevelOfDetailSwitchingDistance": "0",
-    "DFIntCSGLevelOfDetailSwitchingDistanceL12": "0",
-    "DFIntCSGLevelOfDetailSwitchingDistanceL23": "0",
-    "DFIntCSGLevelOfDetailSwitchingDistanceL34": "0",
-    "DFIntDebugFRMQualityLevelOverride": "1",
-    "DFFlagDebugPauseVoxelizer": "True",
-    "DFFlagDebugRenderForceTechnologyVoxel": "True",
-    "FFlagGlobalWindRendering": "False",
-    "FIntRenderShadowIntensity": "0",
-    "FIntRenderShadowmapBias": "1",
-    "FIntDebugForceMSAASamples": "-1",
-    "FIntFRMMinGrassDistance": "0",
-    "DFIntTextureQualityOverride": "1"
-}
-```
-### faster speed fflag (not walkspeed, doesnt increase fps, increases visual speed)
-``` json
-{
-  "FFlagSimAdaptiveMinorOptimizations": "True",
-  "DFIntNumAssetsMaxToPreload": "9999999",
-  "FIntSmoothClusterTaskQueueMaxParallelTasks": "20",
-  "DFIntPhysicsAnalyticsHighFrequencyIntervalSec": "20",
-  "DFIntDebugFRMQualityLevelOverride": "1",
-  "DFIntMegaReplicatorNumParallelTasks": "20",
-  "FIntSimWorldTaskQueueParallelTasks": "20",
-  "DFIntMaxMissedWorldStepsRemembered": "1000",
-  "DFIntAssetPreloading": "9999999",
-  "DFIntReplicationDataCacheNumParallelTasks": "20",
-  "DFIntPhysicsReceiveNumParallelTasks": "20",
-  "DFIntConnectionMTUSize": "900",
-  "DFFlagDebugPauseVoxelizer": "True",
-  "FFlagFRMRefactor": "false"
-}
-```
+### **EVERYTHING U SEE BELOW IS NOT TESTED**
 ### Low Graphics - High Render Distance
 ``` json
 {
@@ -2129,19 +856,6 @@ This combination works with every game that uses Ragdolls (the Anti KB is always
 "DFIntCSGLevelOfDetailSwitchingDistanceL34": 1000,
 "DFIntTextureQualityOverride": 1,
 "FFlagDisablePostFx": true
-}
-```
-
-### Boost FPS
-``` json
-{
-"FFlagDebugDisableTelemetryEphemeralCounter": true,
-"FFlagDebugDisableTelemetryEphemeralStat": true,
-"FFlagDebugDisableTelemetryEventIngest": true,
-"FFlagDebugDisableTelemetryPoint": true,
-"FFlagDebugDisableTelemetryV2Counter": true,
-"FFlagDebugDisableTelemetryV2Event": true,
-"FFlagDebugDisableTelemetryV2Stat": true
 }
 ```
 
