@@ -90,13 +90,6 @@ Fast Flags:
   "DFIntNonSolidFloorPercentForceApplication": "-10000"
 }
 ```
-### ESP
-```json
-{
-  "DFFlagDebugDrawBroadPhaseAABBs": "True",
-  "FIntCameraFarZPlane": "0"
-}
-```
 ### more hitboxes
 ###### used to do mesh noclip.
 ``` json
