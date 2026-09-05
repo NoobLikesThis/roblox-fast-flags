@@ -1,5 +1,5 @@
 # roblox-fflags
-[Physics](#physics) [Untested](#untested) [the idk section](#random) [untest_shader](#untest_shader) [visuals](#visuals)
+[Physics](#physics) [ESP](#esp) [Untested](#untested) [the idk section](#random) [untest_shader](#untest_shader) [visuals](#visuals)
 ## physics
 ### inf jump
 ###### POPULAR
@@ -278,6 +278,40 @@ Fast Flags:
 {
     "DFIntSmoothTerrainPhysicsRayAabbSlop": "-9999",
     "DFIntMaximumFreefallMoveTimeInTenths": "2147483648"
+}
+```
+## esp
+### Xray
+```json
+{
+  "FFlagDebugRenderMeshPauseContentRequests": "True",
+  "DFFlagUseVisBugChecks": "False"
+}
+```
+### ESP
+```json
+{
+    "DFFlagDebugDrawEnable": "True",
+    "FFlagVoiceMetricsDataEnabled3": "True",
+    "FFlagVoiceMetricsDebugDrawEnabled4": "True"
+}
+```
+### Esp..?
+###### adds red circle under avatar and a grey thing above
+###### https://github.com/NoobLikesThis/using-older-fflags
+``` json
+{
+    "FFlagDebugAvatarChatVisualization": "True",
+    "FFlagEnableInGameMenuChromeABTest4": "False",
+    "FFlagEnableInGameMenuChrome": "False",
+    "FFlagEnableInGameMenuSongbirdABTest": "False"
+}
+```
+### invis esp
+```json
+{
+  "DFFlagDebugDrawBroadPhaseAABBs": "True",
+  "FIntCameraFarZPlane": "0"
 }
 ```
 ## Lightning Technologies
@@ -768,21 +802,6 @@ High
 	"DebugRenderMeshManagerMaxUtility": "0",
 	"RenderTextureMaxUtility": "0",
 	"DebugRenderMeshManagerAdditionalDetailUtility": "0"
-}
-```
-### Xray
-```json
-{
-  "FFlagDebugRenderMeshPauseContentRequests": "True",
-  "DFFlagUseVisBugChecks": "False"
-}
-```
-### ESP
-```json
-{
-    "DFFlagDebugDrawEnable": "True",
-    "FFlagVoiceMetricsDataEnabled3": "True",
-    "FFlagVoiceMetricsDebugDrawEnabled4": "True"
 }
 ```
 ### Enable GPULightCulling
